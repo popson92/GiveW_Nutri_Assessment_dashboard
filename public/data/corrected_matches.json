@@ -1,0 +1,114 @@
+[
+  {
+    "lga": "B/GWARI",
+    "correct_name": "PHC Birnin Gwari",
+    "imam_name": "B/GWARI",
+    "has_dhis2": "",
+    "sam_admissions": 1148
+  },
+  {
+    "lga": "B/GWARI",
+    "correct_name": "PHC DOGON DAWA",
+    "imam_name": "D/DAWA",
+    "has_dhis2": "",
+    "sam_admissions": 664
+  },
+  {
+    "lga": "B/GWARI",
+    "correct_name": "PHC ANGUWAN HALIDU",
+    "imam_name": "PHC ANG. HALIDU",
+    "has_dhis2": "",
+    "sam_admissions": 344
+  },
+  {
+    "lga": "Chikun",
+    "correct_name": "PHC Doka Maijamaa",
+    "imam_name": "D/maijamaa",
+    "has_dhis2": "",
+    "sam_admissions": 636
+  },
+  {
+    "lga": "Chikun",
+    "correct_name": "PHC Kudandan",
+    "imam_name": "Kudanden",
+    "has_dhis2": "",
+    "sam_admissions": 653
+  },
+  {
+    "lga": "Chikun",
+    "correct_name": "PHC Marabar Rido",
+    "imam_name": "M/Rido",
+    "has_dhis2": "",
+    "sam_admissions": 879
+  },
+  {
+    "lga": "Chikun",
+    "correct_name": "PHC Nasarawa",
+    "imam_name": "Nasarawa",
+    "has_dhis2": "",
+    "sam_admissions": 689
+  },
+  {
+    "lga": "IGABI",
+    "correct_name": "PHC Miyyati",
+    "imam_name": "PHC MIYYATI",
+    "has_dhis2": "",
+    "sam_admissions": 1095
+  },
+  {
+    "lga": "JAMAA",
+    "correct_name": "PHC Jangindi",
+    "imam_name": "JANGINDI",
+    "has_dhis2": "",
+    "sam_admissions": 619
+  },
+  {
+    "lga": "JAMAA",
+    "correct_name": "PHC Kafanchan A  KAF A",
+    "imam_name": "KAF A",
+    "has_dhis2": "",
+    "sam_admissions": 789
+  },
+  {
+    "lga": "K/NORTH",
+    "correct_name": "PHC Zakari Isa Memorial  ZIM",
+    "imam_name": "ZIM PHC",
+    "has_dhis2": "",
+    "sam_admissions": 144
+  },
+  {
+    "lga": "K/SOUTH",
+    "correct_name": "PHC Kakuri Gwari",
+    "imam_name": "PHC K/GWARI",
+    "has_dhis2": "",
+    "sam_admissions": 57
+  },
+  {
+    "lga": "KAURA",
+    "correct_name": "PHC Turaki Buga Memorial Hospital TBMH",
+    "imam_name": "TBMH",
+    "has_dhis2": "",
+    "sam_admissions": 243
+  },
+  {
+    "lga": "KAURU",
+    "correct_name": "PHC Dandaura",
+    "imam_name": "D/DAU",
+    "has_dhis2": "",
+    "sam_admissions": 2236
+  },
+  {
+    "lga": "KAURU",
+    "correct_name": "PHC Dama Kasuwa",
+    "imam_name": "D/KASUWA",
+    "has_dhis2": "",
+    "sam_admissions": 635
+  },
+  {
+    "lga": "KAURU",
+    "correct_name": "PHC Kwassam KWSSM",
+    "imam_name": "KWSSM",
+    "has_dhis2": "",
+    "sam_admissions": 1175
+  }
+]
