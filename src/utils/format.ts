@@ -20,11 +20,11 @@ export function abbreviate(n: number): string {
 }
 
 export const COLORS = {
-  primary: '#276e51',
-  primaryLight: '#368966',
-  primaryLighter: '#85c3a6',
-  accent: '#ff7d11',
-  accentLight: '#ffc070',
+  primary: '#2563eb',
+  primaryLight: '#3b82f6',
+  primaryLighter: '#93c5fd',
+  accent: '#f97316',
+  accentLight: '#fdba74',
   blue: '#3b82f6',
   blueLight: '#93c5fd',
   teal: '#0d9488',
@@ -35,8 +35,8 @@ export const COLORS = {
   amberLight: '#fde68a',
   gray: '#6b7280',
   grayLight: '#d1d5db',
-  kaduna: '#276e51',
-  kano: '#3b82f6',
+  kaduna: '#2563eb',
+  kano: '#0d9488',
   functioning: '#22c55e',
   moderate: '#f59e0b',
   needsReconciliation: '#f97316',

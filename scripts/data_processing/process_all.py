@@ -323,6 +323,152 @@ for row in ws.iter_rows(min_row=2, values_only=True):
 wb.close()
 print(f"  Corrected matches: {len(corrected_matches)}")
 
+# Apply corrected matches: fuzzy-match corrected names against DHIS2 facilities
+from difflib import SequenceMatcher
+
+# Manual overrides for cases where fuzzy matching can't bridge abbreviated names
+MANUAL_DHIS2_OVERRIDES = {
+    ("BIRNIN GWARI", "B/GWARI"): "Maternal And Child Health Clinic Birnin Gwari",
+    ("BIRNIN GWARI", "PHC ANG. HALIDU"): "Anguwan Haladu Priamry Health Centre",
+    ("IGABI", "PHC MIYYATI"): "Rigasa (Miyatti Allah) Primary Health Centre",
+    ("JEMA'A", "JANGINDI"): "Jagindi Gari Health Centre",
+    ("KADUNA SOUTH", "PHC K/GWARI"): "Kurmin Gwari  Primary Health Center",
+    ("KAURU", "D/DAU"): "Dandaura Primary Health Center",
+    ("CHIKUN", "Nasarawa"): "Nassarawa Primary Health Centre (Chikun)",
+}
+
+# Overrides for the remaining 21 unmatched Kaduna IMAM facilities
+ADDITIONAL_OVERRIDES = {
+    ("IGABI", "PHC JAJI"): "Jaji Comprehensive Health Centre",
+    ("JEMA'A", "PHC KAGOMA"): "Kagoma Primary Health Centre",
+    ("JABA", "PHC  Kwoi"): None,  # No clear DHIS2 match in Jaba
+    ("JABA", "PHC Ankung"): "Ankung ?A? Primary Health Centre",
+    ("JABA", "PHC CHORI"): None,  # No clear DHIS2 match
+    ("JABA", "PHC Samban"): None,  # No clear DHIS2 match
+    ("KADUNA NORTH", "PHC KABALA"): "Primary Health Care Centre Kabala",
+    ("KACHIA", "KATARI PHC"): "Katari Primary Health Clinic",
+    ("KAGARKO", "PHC KUKUI"): None,  # Best match "Kenyi" is not the same facility
+    ("KAURA", "PHC Agban"): "Maraban Agban Primary Health Centre",
+    ("KAURA", "PHC MALLAGUM"): "Mallagum 2 Maternal And Child Health Clinic",
+    ("KAURA", "PHC MANCHOK"): "Manchok Primary  Health Clinic",
+    ("KAURU", "B/KOGI"): "Bakin Kogi Primary Health Center",
+    ("KUBAU", "PHC HASKIYA"): None,  # No clear DHIS2 match in Kubau
+    ("LERE", "MPHC A/HAYATU"): None,  # Same facility as below, different name
+    ("LERE", "PHC ANG HAYATU"): None,  # No DHIS2 match (0 adm candidates)
+    ("SABON GARI", "PHC ABDU KWARI"): None,  # No clear match
+    ("SABON GARI", "PHC HANWA"): None,  # No clear match
+    ("SOBA", "PHC DANWATA"): None,  # No clear match
+    ("ZARIA", "KUGU"): None,  # No clear match
+    ("ZARIA", "PHC T/WADA"): None,  # T/Wada is Tudun Wada, no direct match
+}
+MANUAL_DHIS2_OVERRIDES.update({k: v for k, v in ADDITIONAL_OVERRIDES.items() if v is not None})
+
+corrected_applied = 0
+for cm in corrected_matches:
+    imam_lga = normalize_lga(cm["lga"])
+    correct_name = cm["correct_name"].upper()
+    imam_name_upper = cm["imam_name"].upper()
+
+    # Find the IMAM facility in our list
+    target_fac = None
+    for f in facilities:
+        if f["state"] == "Kaduna" and normalize_lga(f["lga"]) == imam_lga:
+            if f["facility_name"].upper() == imam_name_upper or f["facility_name"].upper() in imam_name_upper or imam_name_upper in f["facility_name"].upper():
+                target_fac = f
+                break
+    if not target_fac:
+        # Broader search by LGA
+        for f in facilities:
+            if f["state"] == "Kaduna" and normalize_lga(f["lga"]) == imam_lga:
+                ratio = SequenceMatcher(None, f["facility_name"].upper(), imam_name_upper).ratio()
+                if ratio > 0.6:
+                    target_fac = f
+                    break
+
+    if not target_fac:
+        print(f"  WARNING: Could not find IMAM facility '{cm['imam_name']}' in {cm['lga']}")
+        continue
+
+    if target_fac["dhis2_sam_admitted"] > 0:
+        continue  # Already matched
+
+    # Check manual overrides first
+    override_key = (imam_lga, cm["imam_name"])
+    override_name = MANUAL_DHIS2_OVERRIDES.get(override_key)
+
+    best_score = 0
+    best_dhis2 = None
+
+    if override_name:
+        for d in dhis2_facilities:
+            if d["state"] == "Kaduna" and d["facility"] == override_name:
+                best_dhis2 = d
+                best_score = 1.0
+                break
+
+    if not best_dhis2:
+        # Find best DHIS2 match using corrected name
+        for d in dhis2_facilities:
+            if d["state"] != "Kaduna":
+                continue
+            dhis2_lga = normalize_lga(d["lga"])
+            if dhis2_lga != imam_lga:
+                continue
+            dhis2_clean = d["facility"].upper()
+            score = SequenceMatcher(None, correct_name, dhis2_clean).ratio()
+            if score > best_score:
+                best_score = score
+                best_dhis2 = d
+
+    if best_dhis2 and best_score > 0.35:
+        target_fac["dhis2_sam_admitted"] = best_dhis2["sam_admitted"] or 0
+        target_fac["dhis2_sam_treated"] = best_dhis2["sam_treated"] or 0
+        target_fac["match_status"] = "matched"
+        if target_fac["dhis2_sam_admitted"] > 0:
+            target_fac["imam_dhis2_diff"] = target_fac["imam_admissions"] - target_fac["dhis2_sam_admitted"]
+            if target_fac["imam_admissions"] > 0:
+                target_fac["imam_dhis2_gap_pct"] = round(
+                    (target_fac["imam_admissions"] - target_fac["dhis2_sam_admitted"]) / target_fac["imam_admissions"] * 100, 1
+                )
+        corrected_applied += 1
+        print(f"  MATCHED: '{cm['imam_name']}' -> '{best_dhis2['facility']}' (score={best_score:.2f}, DHIS2 adm={best_dhis2['sam_admitted']})")
+    else:
+        print(f"  NO MATCH: '{cm['imam_name']}' corrected='{cm['correct_name']}' best_score={best_score:.2f}")
+
+print(f"  Corrected matches applied: {corrected_applied} of {len(corrected_matches)}")
+
+# Second pass: match remaining unmatched Kaduna facilities using overrides
+print("Applying additional Kaduna DHIS2 matches...")
+additional_matched = 0
+for f in facilities:
+    if f["state"] != "Kaduna" or f["match_status"] == "matched":
+        continue
+    lga = normalize_lga(f["lga"])
+    override_key = (lga, f["facility_name"])
+    override_name = MANUAL_DHIS2_OVERRIDES.get(override_key) or ADDITIONAL_OVERRIDES.get(override_key)
+    if not override_name:
+        continue
+    for d in dhis2_facilities:
+        if d["state"] == "Kaduna" and d["facility"] == override_name:
+            f["dhis2_sam_admitted"] = d["sam_admitted"] or 0
+            f["dhis2_sam_treated"] = d["sam_treated"] or 0
+            f["match_status"] = "matched"
+            if f["dhis2_sam_admitted"] > 0:
+                f["imam_dhis2_diff"] = f["imam_admissions"] - f["dhis2_sam_admitted"]
+                if f["imam_admissions"] > 0:
+                    f["imam_dhis2_gap_pct"] = round(
+                        (f["imam_admissions"] - f["dhis2_sam_admitted"]) / f["imam_admissions"] * 100, 1
+                    )
+            additional_matched += 1
+            print(f"  MATCHED: '{f['facility_name']}' -> '{d['facility']}' (adm={d['sam_admitted']})")
+            break
+
+print(f"  Additional matches applied: {additional_matched}")
+
+# Final count
+kaduna_remaining = sum(1 for f in facilities if f["state"] == "Kaduna" and f["match_status"] != "matched")
+print(f"  Kaduna still unmatched: {kaduna_remaining}")
+
 
 # ============================================================
 # 5. Load LGA reconciliation data for Kaduna
