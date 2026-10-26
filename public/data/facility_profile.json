@@ -1,0 +1,3647 @@
+{
+  "Kaduna": {
+    "imam_only": [
+      {
+        "facility_name": "PHC  Kwoi",
+        "lga": "JABA",
+        "imam_admissions": 468
+      },
+      {
+        "facility_name": "PHC CHORI",
+        "lga": "JABA",
+        "imam_admissions": 279
+      },
+      {
+        "facility_name": "PHC Samban",
+        "lga": "JABA",
+        "imam_admissions": 709
+      },
+      {
+        "facility_name": "PHC KUKUI",
+        "lga": "KAGARKO",
+        "imam_admissions": 320
+      },
+      {
+        "facility_name": "PHC HASKIYA",
+        "lga": "KUBAU",
+        "imam_admissions": 214
+      },
+      {
+        "facility_name": "MPHC A/HAYATU",
+        "lga": "LERE",
+        "imam_admissions": 41
+      },
+      {
+        "facility_name": "PHC ANG HAYATU",
+        "lga": "LERE",
+        "imam_admissions": 500
+      },
+      {
+        "facility_name": "PHC ABDU KWARI",
+        "lga": "SABON GARI",
+        "imam_admissions": 170
+      },
+      {
+        "facility_name": "PHC HANWA",
+        "lga": "SABON GARI",
+        "imam_admissions": 177
+      },
+      {
+        "facility_name": "PHC DANWATA",
+        "lga": "SOBA",
+        "imam_admissions": 265
+      },
+      {
+        "facility_name": "KUGU",
+        "lga": "ZARIA",
+        "imam_admissions": 1399
+      },
+      {
+        "facility_name": "PHC T/WADA",
+        "lga": "ZARIA",
+        "imam_admissions": 208
+      }
+    ],
+    "both": 154,
+    "both_list": [
+      {
+        "facility_name": "B/GWARI",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 1148,
+        "dhis2_admitted": 2354
+      },
+      {
+        "facility_name": "D/DAWA",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 664,
+        "dhis2_admitted": 767
+      },
+      {
+        "facility_name": "KAKANGI",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 729,
+        "dhis2_admitted": 430
+      },
+      {
+        "facility_name": "KUYELLO",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 730,
+        "dhis2_admitted": 652
+      },
+      {
+        "facility_name": "PHC ANG. HALIDU",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 344,
+        "dhis2_admitted": 454
+      },
+      {
+        "facility_name": "PHC K/DOKA",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 248,
+        "dhis2_admitted": 586
+      },
+      {
+        "facility_name": "RANDAGI",
+        "lga": "BIRNIN GWARI",
+        "imam_admissions": 785,
+        "dhis2_admitted": 565
+      },
+      {
+        "facility_name": "D/maijamaa",
+        "lga": "CHIKUN",
+        "imam_admissions": 636,
+        "dhis2_admitted": 188
+      },
+      {
+        "facility_name": "Kakau",
+        "lga": "CHIKUN",
+        "imam_admissions": 308,
+        "dhis2_admitted": 290
+      },
+      {
+        "facility_name": "Kudanden",
+        "lga": "CHIKUN",
+        "imam_admissions": 653,
+        "dhis2_admitted": 119
+      },
+      {
+        "facility_name": "M/Rido",
+        "lga": "CHIKUN",
+        "imam_admissions": 879,
+        "dhis2_admitted": 874
+      },
+      {
+        "facility_name": "Nasarawa",
+        "lga": "CHIKUN",
+        "imam_admissions": 689,
+        "dhis2_admitted": 944
+      },
+      {
+        "facility_name": "PHC BURUKU",
+        "lga": "CHIKUN",
+        "imam_admissions": 404,
+        "dhis2_admitted": 512
+      },
+      {
+        "facility_name": "PHC KURIGA",
+        "lga": "CHIKUN",
+        "imam_admissions": 134,
+        "dhis2_admitted": 109
+      },
+      {
+        "facility_name": "PHC T/WADA KUJAMA",
+        "lga": "CHIKUN",
+        "imam_admissions": 190,
+        "dhis2_admitted": 99
+      },
+      {
+        "facility_name": "D/MAHAYI",
+        "lga": "GIWA",
+        "imam_admissions": 1328,
+        "dhis2_admitted": 1084
+      },
+      {
+        "facility_name": "GANGARA",
+        "lga": "GIWA",
+        "imam_admissions": 1564,
+        "dhis2_admitted": 1442
+      },
+      {
+        "facility_name": "IYATAWA",
+        "lga": "GIWA",
+        "imam_admissions": 814,
+        "dhis2_admitted": 118
+      },
+      {
+        "facility_name": "KAYA",
+        "lga": "GIWA",
+        "imam_admissions": 964,
+        "dhis2_admitted": 362
+      },
+      {
+        "facility_name": "PHC GIWA",
+        "lga": "GIWA",
+        "imam_admissions": 388,
+        "dhis2_admitted": 176
+      },
+      {
+        "facility_name": "PHC KAKANGI",
+        "lga": "GIWA",
+        "imam_admissions": 310,
+        "dhis2_admitted": 211
+      },
+      {
+        "facility_name": "SHIKA",
+        "lga": "GIWA",
+        "imam_admissions": 1202,
+        "dhis2_admitted": 883
+      },
+      {
+        "facility_name": "PGC ZANGON AYA",
+        "lga": "IGABI",
+        "imam_admissions": 1072,
+        "dhis2_admitted": 1095
+      },
+      {
+        "facility_name": "PGHC MONDO",
+        "lga": "IGABI",
+        "imam_admissions": 713,
+        "dhis2_admitted": 741
+      },
+      {
+        "facility_name": "PHC DANMANI",
+        "lga": "IGABI",
+        "imam_admissions": 946,
+        "dhis2_admitted": 915
+      },
+      {
+        "facility_name": "PHC GWARAJI",
+        "lga": "IGABI",
+        "imam_admissions": 276,
+        "dhis2_admitted": 287
+      },
+      {
+        "facility_name": "PHC IGABI",
+        "lga": "IGABI",
+        "imam_admissions": 1656,
+        "dhis2_admitted": 1300
+      },
+      {
+        "facility_name": "PHC JAJI",
+        "lga": "IGABI",
+        "imam_admissions": 1136,
+        "dhis2_admitted": 1169
+      },
+      {
+        "facility_name": "PHC MARABAN JOS",
+        "lga": "IGABI",
+        "imam_admissions": 1459,
+        "dhis2_admitted": 1397
+      },
+      {
+        "facility_name": "PHC MIYYATI",
+        "lga": "IGABI",
+        "imam_admissions": 1095,
+        "dhis2_admitted": 906
+      },
+      {
+        "facility_name": "PHC RIGACHIKUN",
+        "lga": "IGABI",
+        "imam_admissions": 334,
+        "dhis2_admitted": 225
+      },
+      {
+        "facility_name": "AUCHAN PHC",
+        "lga": "IKARA",
+        "imam_admissions": 1386,
+        "dhis2_admitted": 973
+      },
+      {
+        "facility_name": "IKARA PHC",
+        "lga": "IKARA",
+        "imam_admissions": 1546,
+        "dhis2_admitted": 1539
+      },
+      {
+        "facility_name": "PAKI PHC",
+        "lga": "IKARA",
+        "imam_admissions": 605,
+        "dhis2_admitted": 498
+      },
+      {
+        "facility_name": "PHC KUYA",
+        "lga": "IKARA",
+        "imam_admissions": 276,
+        "dhis2_admitted": 215
+      },
+      {
+        "facility_name": "PHC PALA",
+        "lga": "IKARA",
+        "imam_admissions": 172,
+        "dhis2_admitted": 185
+      },
+      {
+        "facility_name": "SAULAWA PHC",
+        "lga": "IKARA",
+        "imam_admissions": 538,
+        "dhis2_admitted": 502
+      },
+      {
+        "facility_name": "SAYASAYA PHC",
+        "lga": "IKARA",
+        "imam_admissions": 994,
+        "dhis2_admitted": 1179
+      },
+      {
+        "facility_name": "ASSO",
+        "lga": "JEMA'A",
+        "imam_admissions": 467,
+        "dhis2_admitted": 210
+      },
+      {
+        "facility_name": "BARDE",
+        "lga": "JEMA'A",
+        "imam_admissions": 530,
+        "dhis2_admitted": 516
+      },
+      {
+        "facility_name": "G/WAYA",
+        "lga": "JEMA'A",
+        "imam_admissions": 413,
+        "dhis2_admitted": 322
+      },
+      {
+        "facility_name": "JANGINDI",
+        "lga": "JEMA'A",
+        "imam_admissions": 619,
+        "dhis2_admitted": 300
+      },
+      {
+        "facility_name": "KAF A",
+        "lga": "JEMA'A",
+        "imam_admissions": 789,
+        "dhis2_admitted": 635
+      },
+      {
+        "facility_name": "PHC KAGOMA",
+        "lga": "JEMA'A",
+        "imam_admissions": 269,
+        "dhis2_admitted": 140
+      },
+      {
+        "facility_name": "PHC MAIGIZO",
+        "lga": "JEMA'A",
+        "imam_admissions": 246,
+        "dhis2_admitted": 40
+      },
+      {
+        "facility_name": "PHC Ankung",
+        "lga": "JABA",
+        "imam_admissions": 541,
+        "dhis2_admitted": 91
+      },
+      {
+        "facility_name": "PHC BITARO",
+        "lga": "JABA",
+        "imam_admissions": 145,
+        "dhis2_admitted": 12
+      },
+      {
+        "facility_name": "PHC Daddu",
+        "lga": "JABA",
+        "imam_admissions": 839,
+        "dhis2_admitted": 212
+      },
+      {
+        "facility_name": "PHC Fai",
+        "lga": "JABA",
+        "imam_admissions": 637,
+        "dhis2_admitted": 90
+      },
+      {
+        "facility_name": "BADARAWA PHC",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 349,
+        "dhis2_admitted": 352
+      },
+      {
+        "facility_name": "H/BANKI PHC",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 220,
+        "dhis2_admitted": 175
+      },
+      {
+        "facility_name": "PHC ANG SHANU",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 157,
+        "dhis2_admitted": 18
+      },
+      {
+        "facility_name": "PHC KABALA",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 147,
+        "dhis2_admitted": 46
+      },
+      {
+        "facility_name": "R/GUZA PHC",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 719,
+        "dhis2_admitted": 705
+      },
+      {
+        "facility_name": "U/RIMI PHC",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 535,
+        "dhis2_admitted": 492
+      },
+      {
+        "facility_name": "ZIM PHC",
+        "lga": "KADUNA NORTH",
+        "imam_admissions": 144,
+        "dhis2_admitted": 179
+      },
+      {
+        "facility_name": "BARNAWA PHC",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 239,
+        "dhis2_admitted": 198
+      },
+      {
+        "facility_name": "KAGORO Rd PHC",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 513,
+        "dhis2_admitted": 706
+      },
+      {
+        "facility_name": "MAKERA PHC",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 268,
+        "dhis2_admitted": 204
+      },
+      {
+        "facility_name": "PHC BADIKO",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 95,
+        "dhis2_admitted": 100
+      },
+      {
+        "facility_name": "PHC K/GWARI",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 57,
+        "dhis2_admitted": 40
+      },
+      {
+        "facility_name": "U/MUAZU PHC",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 333,
+        "dhis2_admitted": 185
+      },
+      {
+        "facility_name": "U/SUNUSI PHC",
+        "lga": "KADUNA SOUTH",
+        "imam_admissions": 429,
+        "dhis2_admitted": 452
+      },
+      {
+        "facility_name": "AGUNU PHC",
+        "lga": "KACHIA",
+        "imam_admissions": 767,
+        "dhis2_admitted": 961
+      },
+      {
+        "facility_name": "KACHIA PHC",
+        "lga": "KACHIA",
+        "imam_admissions": 597,
+        "dhis2_admitted": 315
+      },
+      {
+        "facility_name": "KATARI PHC",
+        "lga": "KACHIA",
+        "imam_admissions": 847,
+        "dhis2_admitted": 178
+      },
+      {
+        "facility_name": "MAZUGA PHC",
+        "lga": "KACHIA",
+        "imam_admissions": 639,
+        "dhis2_admitted": 537
+      },
+      {
+        "facility_name": "PHC DOKA",
+        "lga": "KACHIA",
+        "imam_admissions": 358,
+        "dhis2_admitted": 824
+      },
+      {
+        "facility_name": "PHC SABON SARKI",
+        "lga": "KACHIA",
+        "imam_admissions": 278,
+        "dhis2_admitted": 196
+      },
+      {
+        "facility_name": "TSAUNI PHC",
+        "lga": "KACHIA",
+        "imam_admissions": 594,
+        "dhis2_admitted": 497
+      },
+      {
+        "facility_name": "IDDAH",
+        "lga": "KAGARKO",
+        "imam_admissions": 1190,
+        "dhis2_admitted": 1369
+      },
+      {
+        "facility_name": "JERE",
+        "lga": "KAGARKO",
+        "imam_admissions": 1877,
+        "dhis2_admitted": 2221
+      },
+      {
+        "facility_name": "KAGARKO",
+        "lga": "KAGARKO",
+        "imam_admissions": 758,
+        "dhis2_admitted": 735
+      },
+      {
+        "facility_name": "KENYI",
+        "lga": "KAGARKO",
+        "imam_admissions": 779,
+        "dhis2_admitted": 813
+      },
+      {
+        "facility_name": "KUBACHA",
+        "lga": "KAGARKO",
+        "imam_admissions": 776,
+        "dhis2_admitted": 552
+      },
+      {
+        "facility_name": "PHC DOGON KURMI",
+        "lga": "KAGARKO",
+        "imam_admissions": 387,
+        "dhis2_admitted": 31
+      },
+      {
+        "facility_name": "PHC Agban",
+        "lga": "KAURA",
+        "imam_admissions": 223,
+        "dhis2_admitted": 194
+      },
+      {
+        "facility_name": "PHC Bondon",
+        "lga": "KAURA",
+        "imam_admissions": 271,
+        "dhis2_admitted": 220
+      },
+      {
+        "facility_name": "PHC F/ATT",
+        "lga": "KAURA",
+        "imam_admissions": 196,
+        "dhis2_admitted": 223
+      },
+      {
+        "facility_name": "PHC Kadarko",
+        "lga": "KAURA",
+        "imam_admissions": 228,
+        "dhis2_admitted": 221
+      },
+      {
+        "facility_name": "PHC MALLAGUM",
+        "lga": "KAURA",
+        "imam_admissions": 81,
+        "dhis2_admitted": 41
+      },
+      {
+        "facility_name": "PHC MANCHOK",
+        "lga": "KAURA",
+        "imam_admissions": 91,
+        "dhis2_admitted": 100
+      },
+      {
+        "facility_name": "TBMH",
+        "lga": "KAURA",
+        "imam_admissions": 243,
+        "dhis2_admitted": 478
+      },
+      {
+        "facility_name": "B/KOGI",
+        "lga": "KAURU",
+        "imam_admissions": 657,
+        "dhis2_admitted": 499
+      },
+      {
+        "facility_name": "D/DAU",
+        "lga": "KAURU",
+        "imam_admissions": 2236,
+        "dhis2_admitted": 2104
+      },
+      {
+        "facility_name": "D/KASUWA",
+        "lga": "KAURU",
+        "imam_admissions": 635,
+        "dhis2_admitted": 612
+      },
+      {
+        "facility_name": "KAURU",
+        "lga": "KAURU",
+        "imam_admissions": 944,
+        "dhis2_admitted": 91
+      },
+      {
+        "facility_name": "KWSSM",
+        "lga": "KAURU",
+        "imam_admissions": 1175,
+        "dhis2_admitted": 1267
+      },
+      {
+        "facility_name": "PHC KADADE",
+        "lga": "KAURU",
+        "imam_admissions": 194,
+        "dhis2_admitted": 135
+      },
+      {
+        "facility_name": "PHC KAGADAMA",
+        "lga": "KAURU",
+        "imam_admissions": 236,
+        "dhis2_admitted": 74
+      },
+      {
+        "facility_name": "ANCHAU PHC",
+        "lga": "KUBAU",
+        "imam_admissions": 1441,
+        "dhis2_admitted": 1384
+      },
+      {
+        "facility_name": "DAMAU PHC",
+        "lga": "KUBAU",
+        "imam_admissions": 974,
+        "dhis2_admitted": 978
+      },
+      {
+        "facility_name": "KUBAU PHC",
+        "lga": "KUBAU",
+        "imam_admissions": 954,
+        "dhis2_admitted": 6584
+      },
+      {
+        "facility_name": "PAMBEGUA PHC",
+        "lga": "KUBAU",
+        "imam_admissions": 1420,
+        "dhis2_admitted": 1340
+      },
+      {
+        "facility_name": "PHC KARGI",
+        "lga": "KUBAU",
+        "imam_admissions": 232,
+        "dhis2_admitted": 96
+      },
+      {
+        "facility_name": "ZUNTU PHC",
+        "lga": "KUBAU",
+        "imam_admissions": 1663,
+        "dhis2_admitted": 1517
+      },
+      {
+        "facility_name": "HUNKUYI PHC",
+        "lga": "KUDAN",
+        "imam_admissions": 1092,
+        "dhis2_admitted": 22
+      },
+      {
+        "facility_name": "K/WALI PHC",
+        "lga": "KUDAN",
+        "imam_admissions": 1172,
+        "dhis2_admitted": 1141
+      },
+      {
+        "facility_name": "KUDAN PHC",
+        "lga": "KUDAN",
+        "imam_admissions": 1370,
+        "dhis2_admitted": 5813
+      },
+      {
+        "facility_name": "LUKORO PHC",
+        "lga": "KUDAN",
+        "imam_admissions": 968,
+        "dhis2_admitted": 821
+      },
+      {
+        "facility_name": "PHC DOKA",
+        "lga": "KUDAN",
+        "imam_admissions": 377,
+        "dhis2_admitted": 819
+      },
+      {
+        "facility_name": "PHC SABON GARI",
+        "lga": "KUDAN",
+        "imam_admissions": 245,
+        "dhis2_admitted": 300
+      },
+      {
+        "facility_name": "TABA PHC",
+        "lga": "KUDAN",
+        "imam_admissions": 1125,
+        "dhis2_admitted": 708
+      },
+      {
+        "facility_name": "PHC  RIMAU",
+        "lga": "KAJURU",
+        "imam_admissions": 124,
+        "dhis2_admitted": 43
+      },
+      {
+        "facility_name": "PHC IBURU",
+        "lga": "KAJURU",
+        "imam_admissions": 158,
+        "dhis2_admitted": 133
+      },
+      {
+        "facility_name": "PHC Idon Hanya",
+        "lga": "KAJURU",
+        "imam_admissions": 118,
+        "dhis2_admitted": 18
+      },
+      {
+        "facility_name": "PHC K/Magani",
+        "lga": "KAJURU",
+        "imam_admissions": 375,
+        "dhis2_admitted": 260
+      },
+      {
+        "facility_name": "PHC Kajuru",
+        "lga": "KAJURU",
+        "imam_admissions": 189,
+        "dhis2_admitted": 83
+      },
+      {
+        "facility_name": "PHC Kallah",
+        "lga": "KAJURU",
+        "imam_admissions": 200,
+        "dhis2_admitted": 155
+      },
+      {
+        "facility_name": "PHC Kufana",
+        "lga": "KAJURU",
+        "imam_admissions": 121,
+        "dhis2_admitted": 29
+      },
+      {
+        "facility_name": "DANALHAJI",
+        "lga": "LERE",
+        "imam_admissions": 1879,
+        "dhis2_admitted": 2145
+      },
+      {
+        "facility_name": "KAYARDA",
+        "lga": "LERE",
+        "imam_admissions": 1301,
+        "dhis2_admitted": 1336
+      },
+      {
+        "facility_name": "LAZURU",
+        "lga": "LERE",
+        "imam_admissions": 1627,
+        "dhis2_admitted": 1063
+      },
+      {
+        "facility_name": "LERE",
+        "lga": "LERE",
+        "imam_admissions": 1742,
+        "dhis2_admitted": 1399
+      },
+      {
+        "facility_name": "PHC KAKIDARE",
+        "lga": "LERE",
+        "imam_admissions": 862,
+        "dhis2_admitted": 278
+      },
+      {
+        "facility_name": "SAMINAKA",
+        "lga": "LERE",
+        "imam_admissions": 1478,
+        "dhis2_admitted": 1032
+      },
+      {
+        "facility_name": "D/GUZURI",
+        "lga": "MAKARFI",
+        "imam_admissions": 1149,
+        "dhis2_admitted": 1054
+      },
+      {
+        "facility_name": "GIMI",
+        "lga": "MAKARFI",
+        "imam_admissions": 794,
+        "dhis2_admitted": 833
+      },
+      {
+        "facility_name": "GUBUCI",
+        "lga": "MAKARFI",
+        "imam_admissions": 1289,
+        "dhis2_admitted": 1508
+      },
+      {
+        "facility_name": "MAYERE",
+        "lga": "MAKARFI",
+        "imam_admissions": 1090,
+        "dhis2_admitted": 1421
+      },
+      {
+        "facility_name": "N/DOYA",
+        "lga": "MAKARFI",
+        "imam_admissions": 1061,
+        "dhis2_admitted": 968
+      },
+      {
+        "facility_name": "PHC DANDAMISA",
+        "lga": "MAKARFI",
+        "imam_admissions": 160,
+        "dhis2_admitted": 94
+      },
+      {
+        "facility_name": "PHC GAZARA",
+        "lga": "MAKARFI",
+        "imam_admissions": 168,
+        "dhis2_admitted": 101
+      },
+      {
+        "facility_name": "Phc Basawa",
+        "lga": "SABON GARI",
+        "imam_admissions": 460,
+        "dhis2_admitted": 396
+      },
+      {
+        "facility_name": "Phc H/dogo",
+        "lga": "SABON GARI",
+        "imam_admissions": 529,
+        "dhis2_admitted": 353
+      },
+      {
+        "facility_name": "Phc Kwata",
+        "lga": "SABON GARI",
+        "imam_admissions": 493,
+        "dhis2_admitted": 476
+      },
+      {
+        "facility_name": "Phc Sakadadi",
+        "lga": "SABON GARI",
+        "imam_admissions": 994,
+        "dhis2_admitted": 1039
+      },
+      {
+        "facility_name": "Phc Zabi",
+        "lga": "SABON GARI",
+        "imam_admissions": 544,
+        "dhis2_admitted": 509
+      },
+      {
+        "facility_name": "FARIN KASA",
+        "lga": "SOBA",
+        "imam_admissions": 889,
+        "dhis2_admitted": 455
+      },
+      {
+        "facility_name": "GAMAGIRA",
+        "lga": "SOBA",
+        "imam_admissions": 838,
+        "dhis2_admitted": 637
+      },
+      {
+        "facility_name": "PHC KINKIBA",
+        "lga": "SOBA",
+        "imam_admissions": 171,
+        "dhis2_admitted": 65
+      },
+      {
+        "facility_name": "RAHAMA",
+        "lga": "SOBA",
+        "imam_admissions": 1049,
+        "dhis2_admitted": 474
+      },
+      {
+        "facility_name": "RICHIFA",
+        "lga": "SOBA",
+        "imam_admissions": 1386,
+        "dhis2_admitted": 1341
+      },
+      {
+        "facility_name": "SOBA",
+        "lga": "SOBA",
+        "imam_admissions": 1223,
+        "dhis2_admitted": 933
+      },
+      {
+        "facility_name": "YAKASAI",
+        "lga": "SOBA",
+        "imam_admissions": 1041,
+        "dhis2_admitted": 869
+      },
+      {
+        "facility_name": "ABORO",
+        "lga": "SANGA",
+        "imam_admissions": 765,
+        "dhis2_admitted": 608
+      },
+      {
+        "facility_name": "F/NINZO",
+        "lga": "SANGA",
+        "imam_admissions": 125,
+        "dhis2_admitted": 94
+      },
+      {
+        "facility_name": "MAYIR",
+        "lga": "SANGA",
+        "imam_admissions": 256,
+        "dhis2_admitted": 171
+      },
+      {
+        "facility_name": "NUMBU",
+        "lga": "SANGA",
+        "imam_admissions": 223,
+        "dhis2_admitted": 113
+      },
+      {
+        "facility_name": "PHC F/KARSHI",
+        "lga": "SANGA",
+        "imam_admissions": 105,
+        "dhis2_admitted": 83
+      },
+      {
+        "facility_name": "PHC GWANTU",
+        "lga": "SANGA",
+        "imam_admissions": 100,
+        "dhis2_admitted": 11
+      },
+      {
+        "facility_name": "WASA",
+        "lga": "SANGA",
+        "imam_admissions": 380,
+        "dhis2_admitted": 234
+      },
+      {
+        "facility_name": "ANG/FATIKA",
+        "lga": "ZARIA",
+        "imam_admissions": 538,
+        "dhis2_admitted": 592
+      },
+      {
+        "facility_name": "B/DODO",
+        "lga": "ZARIA",
+        "imam_admissions": 1164,
+        "dhis2_admitted": 1166
+      },
+      {
+        "facility_name": "PHC DAMBO",
+        "lga": "ZARIA",
+        "imam_admissions": 136,
+        "dhis2_admitted": 80
+      },
+      {
+        "facility_name": "R/MAGAJI",
+        "lga": "ZARIA",
+        "imam_admissions": 716,
+        "dhis2_admitted": 545
+      },
+      {
+        "facility_name": "WUCICIRI",
+        "lga": "ZARIA",
+        "imam_admissions": 1313,
+        "dhis2_admitted": 1290
+      },
+      {
+        "facility_name": "PHC ANG RIMI",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 106,
+        "dhis2_admitted": 109
+      },
+      {
+        "facility_name": "PHC Farman",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 524,
+        "dhis2_admitted": 435
+      },
+      {
+        "facility_name": "PHC Kamantan",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 427,
+        "dhis2_admitted": 563
+      },
+      {
+        "facility_name": "PHC MASARA",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 118,
+        "dhis2_admitted": 53
+      },
+      {
+        "facility_name": "PHC Mabushi",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 507,
+        "dhis2_admitted": 418
+      },
+      {
+        "facility_name": "PHC Zango Urban",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 514,
+        "dhis2_admitted": 452
+      },
+      {
+        "facility_name": "PHC Zonkwa",
+        "lga": "ZANGON KATAF",
+        "imam_admissions": 639,
+        "dhis2_admitted": 605
+      }
+    ],
+    "dhis2_only": 103,
+    "dhis2_only_list": [
+      {
+        "facility_name": "Jere Primary Health Centre",
+        "lga": "Kagarko",
+        "sam_admitted": 2221,
+        "sam_treated": 1579
+      },
+      {
+        "facility_name": "Dan-Alhaji Primary Health Centre",
+        "lga": "Lere",
+        "sam_admitted": 2160,
+        "sam_treated": 1171
+      },
+      {
+        "facility_name": "Kasuwan Dutse Modern Primary Health Centre",
+        "lga": "Zaria",
+        "sam_admitted": 1543,
+        "sam_treated": 252
+      },
+      {
+        "facility_name": "Ikara Primary Health Centre",
+        "lga": "Ikara",
+        "sam_admitted": 1451,
+        "sam_treated": 612
+      },
+      {
+        "facility_name": "Anchau Primary Health Centre",
+        "lga": "Kubau",
+        "sam_admitted": 1417,
+        "sam_treated": 444
+      },
+      {
+        "facility_name": "Lere Primary Health Centre",
+        "lga": "Lere",
+        "sam_admitted": 1390,
+        "sam_treated": 684
+      },
+      {
+        "facility_name": "Kayarda Primary Health Centre",
+        "lga": "Lere",
+        "sam_admitted": 1327,
+        "sam_treated": 242
+      },
+      {
+        "facility_name": "Igabi Primary Health Centre",
+        "lga": "Igabi",
+        "sam_admitted": 1217,
+        "sam_treated": 492
+      },
+      {
+        "facility_name": "Jaji Comprehensive Health Centre",
+        "lga": "Igabi",
+        "sam_admitted": 1169,
+        "sam_treated": 434
+      },
+      {
+        "facility_name": "Lazuru Primary Health Centre",
+        "lga": "Lere",
+        "sam_admitted": 1140,
+        "sam_treated": 204
+      },
+      {
+        "facility_name": "Zango Aya (Nhis) Primary Health Centre",
+        "lga": "Igabi",
+        "sam_admitted": 1104,
+        "sam_treated": 591
+      },
+      {
+        "facility_name": "Soba Primary Health Centre",
+        "lga": "Soba",
+        "sam_admitted": 1041,
+        "sam_treated": 536
+      },
+      {
+        "facility_name": "Saminaka Comprehensive Health Centre",
+        "lga": "Lere",
+        "sam_admitted": 1032,
+        "sam_treated": 405
+      },
+      {
+        "facility_name": "Hunkuyi Primary Health Centre",
+        "lga": "Kudan",
+        "sam_admitted": 1004,
+        "sam_treated": 293
+      },
+      {
+        "facility_name": "Kudan Primary Health Centre",
+        "lga": "Kudan",
+        "sam_admitted": 963,
+        "sam_treated": 177
+      },
+      {
+        "facility_name": "Primary Health Center Kauru",
+        "lga": "Kauru",
+        "sam_admitted": 962,
+        "sam_treated": 381
+      },
+      {
+        "facility_name": "Kubau Primary Health Centre",
+        "lga": "Kubau",
+        "sam_admitted": 856,
+        "sam_treated": 340
+      },
+      {
+        "facility_name": "Shika Primary Health Centre",
+        "lga": "Giwa",
+        "sam_admitted": 844,
+        "sam_treated": 331
+      },
+      {
+        "facility_name": "Gimi Gari Primary Health Centre",
+        "lga": "Makarfi",
+        "sam_admitted": 833,
+        "sam_treated": 310
+      },
+      {
+        "facility_name": "Kagarko Primary Health Centre",
+        "lga": "Kagarko",
+        "sam_admitted": 663,
+        "sam_treated": 183
+      },
+      {
+        "facility_name": "Zonkwa Primary Health Centre",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 632,
+        "sam_treated": 313
+      },
+      {
+        "facility_name": "Randagi Primary Health Centre",
+        "lga": "Birnin Gwari",
+        "sam_admitted": 602,
+        "sam_treated": 245
+      },
+      {
+        "facility_name": "Kubacha Primary Health Centre",
+        "lga": "Kagarko",
+        "sam_admitted": 546,
+        "sam_treated": 242
+      },
+      {
+        "facility_name": "Barau Dikko Teaching Hospital",
+        "lga": "Kaduna North",
+        "sam_admitted": 502,
+        "sam_treated": 183
+      },
+      {
+        "facility_name": "Bakin Kogi Primary Health Center",
+        "lga": "Kauru",
+        "sam_admitted": 499,
+        "sam_treated": 213
+      },
+      {
+        "facility_name": "Farman Primary Health Centre",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 475,
+        "sam_treated": 194
+      },
+      {
+        "facility_name": "Basawa Primary Health Centre",
+        "lga": "Sabon Gari",
+        "sam_admitted": 405,
+        "sam_treated": 143
+      },
+      {
+        "facility_name": "Kachia Primary Health Centre",
+        "lga": "Kachia",
+        "sam_admitted": 373,
+        "sam_treated": 45
+      },
+      {
+        "facility_name": "Badarawa Primary Health Centre",
+        "lga": "Kaduna North",
+        "sam_admitted": 330,
+        "sam_treated": 153
+      },
+      {
+        "facility_name": "Danbushiya Health Centre",
+        "lga": "Chikun",
+        "sam_admitted": 325,
+        "sam_treated": 143
+      },
+      {
+        "facility_name": "Kakau Primary Health Centre",
+        "lga": "Chikun",
+        "sam_admitted": 290,
+        "sam_treated": 108
+      },
+      {
+        "facility_name": "Gambo Sawaba General Hospital",
+        "lga": "Zaria",
+        "sam_admitted": 265,
+        "sam_treated": 24
+      },
+      {
+        "facility_name": "Jibrin Maigwari General Hospital.",
+        "lga": "Birnin Gwari",
+        "sam_admitted": 261,
+        "sam_treated": 68
+      },
+      {
+        "facility_name": "Rigasa General Hospital",
+        "lga": "Igabi",
+        "sam_admitted": 248,
+        "sam_treated": 97
+      },
+      {
+        "facility_name": "Kwoi General Hospital",
+        "lga": "Jaba",
+        "sam_admitted": 202,
+        "sam_treated": 99
+      },
+      {
+        "facility_name": "Pambegua Rural Hospital",
+        "lga": "Kubau",
+        "sam_admitted": 199,
+        "sam_treated": 27
+      },
+      {
+        "facility_name": "Maraban Agban Primary Health Centre",
+        "lga": "Kaura",
+        "sam_admitted": 194,
+        "sam_treated": 43
+      },
+      {
+        "facility_name": "Katari Primary Health Clinic",
+        "lga": "Kachia",
+        "sam_admitted": 178,
+        "sam_treated": 103
+      },
+      {
+        "facility_name": "Giwa Primary Health Centre",
+        "lga": "Giwa",
+        "sam_admitted": 176,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Dutsen Wai Primary Health Centre",
+        "lga": "Kubau",
+        "sam_admitted": 157,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Tudun Wada Zaria Primary Health Centre",
+        "lga": "Zaria",
+        "sam_admitted": 145,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kagoma Primary Health Centre",
+        "lga": "Jema'a",
+        "sam_admitted": 140,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Rural Hospital Maigana",
+        "lga": "Soba",
+        "sam_admitted": 136,
+        "sam_treated": 44
+      },
+      {
+        "facility_name": "Dr Gwamna Awan General Hospital",
+        "lga": "Kaduna South",
+        "sam_admitted": 135,
+        "sam_treated": 86
+      },
+      {
+        "facility_name": "Kawo General Hospital",
+        "lga": "Kaduna North",
+        "sam_admitted": 128,
+        "sam_treated": 16
+      },
+      {
+        "facility_name": "Awai Primary Health Centre",
+        "lga": "Soba",
+        "sam_admitted": 125,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Primary Health Centre Fai",
+        "lga": "Jaba",
+        "sam_admitted": 101,
+        "sam_treated": 88
+      },
+      {
+        "facility_name": "Manchok Primary  Health Clinic",
+        "lga": "Kaura",
+        "sam_admitted": 100,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Sir Partrict Ibrahim Yakowa Memorial Hospital Kafanchan",
+        "lga": "Jema'a",
+        "sam_admitted": 97,
+        "sam_treated": 28
+      },
+      {
+        "facility_name": "Ankung ?A? Primary Health Centre",
+        "lga": "Jaba",
+        "sam_admitted": 91,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kagarko General Hospital",
+        "lga": "Kagarko",
+        "sam_admitted": 91,
+        "sam_treated": 51
+      },
+      {
+        "facility_name": "Badikko Primary Health Centre",
+        "lga": "Kaduna South",
+        "sam_admitted": 87,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Galadimawa Primary Health Centre",
+        "lga": "Giwa",
+        "sam_admitted": 86,
+        "sam_treated": 115
+      },
+      {
+        "facility_name": "Kajuru Primary Health Centre",
+        "lga": "Kajuru",
+        "sam_admitted": 85,
+        "sam_treated": 72
+      },
+      {
+        "facility_name": "Kwoi Primary Health Centre",
+        "lga": "Jaba",
+        "sam_admitted": 81,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Samban Gida Primary Health Centre",
+        "lga": "Jaba",
+        "sam_admitted": 71,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Rural Hospital Zonkwa",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 62,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kinkba Primary Health Centre",
+        "lga": "Soba",
+        "sam_admitted": 55,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Sabon Gari Chori Primary Health Centre",
+        "lga": "Jaba",
+        "sam_admitted": 50,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Primary Health Care Centre Kabala",
+        "lga": "Kaduna North",
+        "sam_admitted": 46,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Mallagum 2 Maternal And Child Health Clinic",
+        "lga": "Kaura",
+        "sam_admitted": 41,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Idon Rural Hospital",
+        "lga": "Kajuru",
+        "sam_admitted": 39,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Ikara General Hospital",
+        "lga": "Ikara",
+        "sam_admitted": 38,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Combila Health Clinic",
+        "lga": "Sanga",
+        "sam_admitted": 31,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Anguwar Bawa Primary Health Centre",
+        "lga": "Lere",
+        "sam_admitted": 30,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kufana Primary Health Centre",
+        "lga": "Kajuru",
+        "sam_admitted": 29,
+        "sam_treated": 5
+      },
+      {
+        "facility_name": "Narayi Primary Health Centre",
+        "lga": "Chikun",
+        "sam_admitted": 28,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Giwa General Hospital",
+        "lga": "Giwa",
+        "sam_admitted": 23,
+        "sam_treated": 8
+      },
+      {
+        "facility_name": "Giltooe  Aris  Specialist Hospital",
+        "lga": "Kaduna South",
+        "sam_admitted": 21,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Tabanni Primary Health Centre",
+        "lga": "Birnin Gwari",
+        "sam_admitted": 17,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Turunku Rural Hospital",
+        "lga": "Igabi",
+        "sam_admitted": 16,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kwasallo Health Clinic",
+        "lga": "Soba",
+        "sam_admitted": 15,
+        "sam_treated": 15
+      },
+      {
+        "facility_name": "Unguwar Dosa Primary Health Care",
+        "lga": "Kaduna North",
+        "sam_admitted": 15,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "General Hospital Gumel",
+        "lga": "Kachia",
+        "sam_admitted": 15,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "Kaban Primary Health Centre",
+        "lga": "Igabi",
+        "sam_admitted": 12,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Gwantu Primary Health Centre",
+        "lga": "Sanga",
+        "sam_admitted": 11,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kurmin Mashi Primary Health Centre",
+        "lga": "Kaduna South",
+        "sam_admitted": 11,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Jodeb Hosp. & Maternity",
+        "lga": "Kaduna North",
+        "sam_admitted": 10,
+        "sam_treated": 3
+      },
+      {
+        "facility_name": "Katsit Kafanchan Health Centre",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 9,
+        "sam_treated": 8
+      },
+      {
+        "facility_name": "Yakawada Health Clinic",
+        "lga": "Giwa",
+        "sam_admitted": 8,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Jaji Command And Staff College Hospital",
+        "lga": "Igabi",
+        "sam_admitted": 8,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Rhi_Shama Clinic",
+        "lga": "Sanga",
+        "sam_admitted": 7,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "Alh. Muazu Doka Memorial Primary Health  Centre",
+        "lga": "Kaduna North",
+        "sam_admitted": 7,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kinkinau Primary  Health Centre",
+        "lga": "Kaduna South",
+        "sam_admitted": 5,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Unguwan Danko Health Clinic",
+        "lga": "Birnin Gwari",
+        "sam_admitted": 5,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Zangon Kataf General Hospital",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 4,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kujama Rural Hospital",
+        "lga": "Chikun",
+        "sam_admitted": 3,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Oxford Hospital",
+        "lga": "Kaduna South",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Salama Health Centre",
+        "lga": "Chikun",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Gwantu General Hospital",
+        "lga": "Sanga",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Health Clinic Gagumi",
+        "lga": "Birnin Gwari",
+        "sam_admitted": 2,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "Bina Health Clinic",
+        "lga": "Igabi",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Health Clinic  Kajuru Government Technical College",
+        "lga": "Kajuru",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Gora Bafai Primary Health Centre",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kaura Rural Hospital",
+        "lga": "Kaura",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Magamia Primary Health Centre",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "As-Shifa Hospital",
+        "lga": "Kaduna North",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Ercc Clinic Ung Ibrahim",
+        "lga": "Sanga",
+        "sam_admitted": 1,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "Jicon Hospital & Specialist Activities",
+        "lga": "Kaduna South",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Madauchi Health Clinic",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "Kamuru Primary Health Centre",
+        "lga": "Zangon Kataf",
+        "sam_admitted": 1,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "Maneks Hospital",
+        "lga": "Kaduna South",
+        "sam_admitted": 1,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "New Era Medical & Maternity Hospital",
+        "lga": "Jema'a",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      }
+    ],
+    "dhis2_only_admissions": 33591,
+    "lga_breakdown": {
+      "JABA": {
+        "imam_only": 3,
+        "both": 4,
+        "dhis2_only": 6
+      },
+      "KAGARKO": {
+        "imam_only": 1,
+        "both": 6,
+        "dhis2_only": 4
+      },
+      "KUBAU": {
+        "imam_only": 1,
+        "both": 6,
+        "dhis2_only": 4
+      },
+      "LERE": {
+        "imam_only": 2,
+        "both": 6,
+        "dhis2_only": 6
+      },
+      "SABON GARI": {
+        "imam_only": 2,
+        "both": 5,
+        "dhis2_only": 1
+      },
+      "SOBA": {
+        "imam_only": 1,
+        "both": 7,
+        "dhis2_only": 5
+      },
+      "ZARIA": {
+        "imam_only": 2,
+        "both": 5,
+        "dhis2_only": 3
+      },
+      "BIRNIN GWARI": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 5
+      },
+      "CHIKUN": {
+        "imam_only": 0,
+        "both": 8,
+        "dhis2_only": 5
+      },
+      "GIWA": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 5
+      },
+      "IGABI": {
+        "imam_only": 0,
+        "both": 9,
+        "dhis2_only": 8
+      },
+      "IKARA": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 2
+      },
+      "JEMA'A": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 3
+      },
+      "KADUNA NORTH": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 8
+      },
+      "KADUNA SOUTH": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 8
+      },
+      "KACHIA": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 3
+      },
+      "KAURA": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 4
+      },
+      "KAURU": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 2
+      },
+      "KUDAN": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 2
+      },
+      "KAJURU": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 4
+      },
+      "MAKARFI": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 1
+      },
+      "SANGA": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 5
+      },
+      "ZANGON KATAF": {
+        "imam_only": 0,
+        "both": 7,
+        "dhis2_only": 9
+      }
+    }
+  },
+  "Kano": {
+    "imam_only": [
+      {
+        "facility_name": "Ajingi MPHC",
+        "lga": "Ajingi",
+        "imam_admissions": 175
+      },
+      {
+        "facility_name": "Yallami PHC",
+        "lga": "Bichi",
+        "imam_admissions": 99
+      },
+      {
+        "facility_name": "Kore PHC",
+        "lga": "Dambatta",
+        "imam_admissions": 111
+      },
+      {
+        "facility_name": "Gwanda PHC",
+        "lga": "Dambatta",
+        "imam_admissions": 119
+      },
+      {
+        "facility_name": "San San PHC",
+        "lga": "Dambatta",
+        "imam_admissions": 124
+      },
+      {
+        "facility_name": "women centre HP",
+        "lga": "Dambatta",
+        "imam_admissions": 103
+      },
+      {
+        "facility_name": "Goron Maje PHC",
+        "lga": "Dambatta",
+        "imam_admissions": 117
+      },
+      {
+        "facility_name": "Gano PHC",
+        "lga": "Dawakin Kudu",
+        "imam_admissions": 200
+      },
+      {
+        "facility_name": "Tumfafi PHC",
+        "lga": "Dawakin Tofa",
+        "imam_admissions": 185
+      },
+      {
+        "facility_name": "Doguwa PHC",
+        "lga": "Doguwa",
+        "imam_admissions": 134
+      },
+      {
+        "facility_name": "Dakasoye PHC",
+        "lga": "Garun Malam",
+        "imam_admissions": 112
+      },
+      {
+        "facility_name": "GACHI MPHC",
+        "lga": "Gaya",
+        "imam_admissions": 197
+      },
+      {
+        "facility_name": "Goron Dutse PHC",
+        "lga": "Gwale",
+        "imam_admissions": 97
+      },
+      {
+        "facility_name": "MMSH",
+        "lga": "Kano Municipal",
+        "imam_admissions": 171
+      },
+      {
+        "facility_name": "BAMMMALI NUHU",
+        "lga": "Kano Municipal",
+        "imam_admissions": 158
+      },
+      {
+        "facility_name": "Kibiya 1 PHC",
+        "lga": "Kibiya",
+        "imam_admissions": 166
+      },
+      {
+        "facility_name": "Dangora PHC",
+        "lga": "Kiru",
+        "imam_admissions": 138
+      },
+      {
+        "facility_name": "Hotoro South",
+        "lga": "Nassarawa",
+        "imam_admissions": 114
+      },
+      {
+        "facility_name": "Kawaji PHC",
+        "lga": "Nassarawa",
+        "imam_admissions": 99
+      },
+      {
+        "facility_name": "Kaura Goje PHC",
+        "lga": "Nassarawa",
+        "imam_admissions": 121
+      },
+      {
+        "facility_name": "Gwagwarwa PHC",
+        "lga": "Nassarawa",
+        "imam_admissions": 231
+      },
+      {
+        "facility_name": "Giginyu PHC",
+        "lga": "Nassarawa",
+        "imam_admissions": 121
+      },
+      {
+        "facility_name": "Gulu PHC",
+        "lga": "Rimin Gado",
+        "imam_admissions": 148
+      },
+      {
+        "facility_name": "CHC",
+        "lga": "Shanono",
+        "imam_admissions": 174
+      },
+      {
+        "facility_name": "Rimi PHC",
+        "lga": "Sumaila",
+        "imam_admissions": 117
+      },
+      {
+        "facility_name": "ALI CLINIC",
+        "lga": "Takai",
+        "imam_admissions": 194
+      },
+      {
+        "facility_name": "Darmanawa PHC",
+        "lga": "Tarauni",
+        "imam_admissions": 138
+      },
+      {
+        "facility_name": "Babban Giji PHC",
+        "lga": "Tarauni",
+        "imam_admissions": 151
+      },
+      {
+        "facility_name": "Tatsan PHC",
+        "lga": "Tsanyawa",
+        "imam_admissions": 91
+      },
+      {
+        "facility_name": "Tsohon Gari PHC",
+        "lga": "Tudun Wada",
+        "imam_admissions": 124
+      },
+      {
+        "facility_name": "BALARABE CHIROMA",
+        "lga": "Ungogo",
+        "imam_admissions": 102
+      },
+      {
+        "facility_name": "Garin Dau",
+        "lga": "Warawa",
+        "imam_admissions": 124
+      },
+      {
+        "facility_name": "Dankaza PHC",
+        "lga": "Wudil",
+        "imam_admissions": 113
+      }
+    ],
+    "both": 64,
+    "both_list": [
+      {
+        "facility_name": "Fanda PHC",
+        "lga": "Albasu",
+        "imam_admissions": 155,
+        "dhis2_admitted": 93,
+        "dhis2_name": "kn Panda Primary Health Center",
+        "match_score": 0.8
+      },
+      {
+        "facility_name": "Gadanya PHC",
+        "lga": "Bagwai",
+        "imam_admissions": 227,
+        "dhis2_admitted": 145,
+        "dhis2_name": "kn Gadanya Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Wak PHC",
+        "lga": "Bebeji",
+        "imam_admissions": 196,
+        "dhis2_admitted": 360,
+        "dhis2_name": "kn Wak Primary Health Center",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Danzabuwa PHC",
+        "lga": "Bichi",
+        "imam_admissions": 99,
+        "dhis2_admitted": 132,
+        "dhis2_name": "kn Danzabuwa  Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "BADUME PHC",
+        "lga": "Bichi",
+        "imam_admissions": 110,
+        "dhis2_admitted": 93,
+        "dhis2_name": "kn Badume  Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "SAYE  PHC",
+        "lga": "Bichi",
+        "imam_admissions": 98,
+        "dhis2_admitted": 143,
+        "dhis2_name": "kn Saye Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Bichi /SARKI?",
+        "lga": "Bichi",
+        "imam_admissions": 109,
+        "dhis2_admitted": 83,
+        "dhis2_name": "kn Bichi General Hospital",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Bunkure PHC",
+        "lga": "Bunkure",
+        "imam_admissions": 132,
+        "dhis2_admitted": 44,
+        "dhis2_name": "kn Bunkure Basic Health Clinic",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "DALA MCH",
+        "lga": "Dala",
+        "imam_admissions": 97,
+        "dhis2_admitted": 268,
+        "dhis2_name": "kn Dala Primary Health Care Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Tattarawa PHC",
+        "lga": "Dawakin Tofa",
+        "imam_admissions": 210,
+        "dhis2_admitted": 102,
+        "dhis2_name": "kn Tattarawa Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Dawanau PHC",
+        "lga": "Dawakin Tofa",
+        "imam_admissions": 136,
+        "dhis2_admitted": 88,
+        "dhis2_name": "kn Dawanau Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Danguguwa PHC",
+        "lga": "Dawakin Tofa",
+        "imam_admissions": 142,
+        "dhis2_admitted": 80,
+        "dhis2_name": "kn Danguguwa Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Ganduje PHC",
+        "lga": "Dawakin Tofa",
+        "imam_admissions": 164,
+        "dhis2_admitted": 89,
+        "dhis2_name": "kn Ganduje Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Falgore PHC",
+        "lga": "Doguwa",
+        "imam_admissions": 134,
+        "dhis2_admitted": 93,
+        "dhis2_name": "kn Falgore Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Tagwaye  PHC",
+        "lga": "Doguwa",
+        "imam_admissions": 134,
+        "dhis2_admitted": 60,
+        "dhis2_name": "kn Tagwaye  Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Dadin Kowa PHC",
+        "lga": "Doguwa",
+        "imam_admissions": 134,
+        "dhis2_admitted": 249,
+        "dhis2_name": "kn Dadin-Kowa Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Riruwai PHC",
+        "lga": "Doguwa",
+        "imam_admissions": 134,
+        "dhis2_admitted": 145,
+        "dhis2_name": "kn Riruwai Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Kwachiri PHC",
+        "lga": "Fagge",
+        "imam_admissions": 127,
+        "dhis2_admitted": 197,
+        "dhis2_name": "kn Kwacire Primary Health Centre",
+        "match_score": 0.8
+      },
+      {
+        "facility_name": "Gabasawa PHC",
+        "lga": "Gabasawa",
+        "imam_admissions": 176,
+        "dhis2_admitted": 88,
+        "dhis2_name": "kn Gabasawa Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Garko MPHC",
+        "lga": "Garko",
+        "imam_admissions": 217,
+        "dhis2_admitted": 141,
+        "dhis2_name": "kn Garko Dukawa Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Jogana PHC",
+        "lga": "Gezawa",
+        "imam_admissions": 123,
+        "dhis2_admitted": 139,
+        "dhis2_name": "kn Jogana Health Clinic",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Kutama PHC",
+        "lga": "Gwarzo",
+        "imam_admissions": 167,
+        "dhis2_admitted": 229,
+        "dhis2_name": "kn Kutama Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Getso COTTAGE",
+        "lga": "Gwarzo",
+        "imam_admissions": 171,
+        "dhis2_admitted": 295,
+        "dhis2_name": "kn Getso Cottage Hospital",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Gwarzo YAR KASUWA",
+        "lga": "Gwarzo",
+        "imam_admissions": 137,
+        "dhis2_admitted": 291,
+        "dhis2_name": "kn Yar Kasuwa Health Clinic",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Lakwaya PHC",
+        "lga": "Gwarzo",
+        "imam_admissions": 156,
+        "dhis2_admitted": 242,
+        "dhis2_name": "kn Lakwaya Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Madadi PHC",
+        "lga": "Gwarzo",
+        "imam_admissions": 156,
+        "dhis2_admitted": 217,
+        "dhis2_name": "kn Madadi Primary Health Center",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Garo PHC",
+        "lga": "Kabo",
+        "imam_admissions": 133,
+        "dhis2_admitted": 2,
+        "dhis2_name": "kn Gammo Primary Health Centre",
+        "match_score": 0.67
+      },
+      {
+        "facility_name": "HASIYA BAYERO",
+        "lga": "Kano Municipal",
+        "imam_admissions": 85,
+        "dhis2_admitted": 600,
+        "dhis2_name": "kn Hasiya Bayero Paediatric Hospital",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Zaitawa YAN AWAKI",
+        "lga": "Kano Municipal",
+        "imam_admissions": 165,
+        "dhis2_admitted": 57,
+        "dhis2_name": "kn Yan Awaki Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Gandu Albasa PHC",
+        "lga": "Kano Municipal",
+        "imam_admissions": 153,
+        "dhis2_admitted": 186,
+        "dhis2_name": "kn Gandu Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Yammedi PHC",
+        "lga": "Karaye",
+        "imam_admissions": 163,
+        "dhis2_admitted": 92,
+        "dhis2_name": "kn Yammedi Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Panshekara PHC",
+        "lga": "Kumbotso",
+        "imam_admissions": 151,
+        "dhis2_admitted": 179,
+        "dhis2_name": "kn Panshekara Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Kunchi PHC",
+        "lga": "Kunchi",
+        "imam_admissions": 146,
+        "dhis2_admitted": 34,
+        "dhis2_name": "kn Kunchi Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Dan Hassan PHC",
+        "lga": "Kura",
+        "imam_admissions": 235,
+        "dhis2_admitted": 85,
+        "dhis2_name": "kn Dan-Hassan Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Gora PHC",
+        "lga": "Madobi",
+        "imam_admissions": 138,
+        "dhis2_admitted": 127,
+        "dhis2_name": "kn Gora Primary Health Clinic",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Kubaraci PHC",
+        "lga": "Madobi",
+        "imam_admissions": 171,
+        "dhis2_admitted": 54,
+        "dhis2_name": "kn Kubarachi Health Clinic",
+        "match_score": 0.94
+      },
+      {
+        "facility_name": "AKILU",
+        "lga": "Madobi",
+        "imam_admissions": 183,
+        "dhis2_admitted": 158,
+        "dhis2_name": "kn Akilu Memorial Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Burji PHC",
+        "lga": "Madobi",
+        "imam_admissions": 196,
+        "dhis2_admitted": 113,
+        "dhis2_name": "kn Burji Primary Heath Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Kauran Mata",
+        "lga": "Madobi",
+        "imam_admissions": 171,
+        "dhis2_admitted": 67,
+        "dhis2_name": "kn Kauran Mata Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Makoda PHC",
+        "lga": "Makoda",
+        "imam_admissions": 144,
+        "dhis2_admitted": 4,
+        "dhis2_name": "kn Makoda Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Minjibir PHC",
+        "lga": "Minjibir",
+        "imam_admissions": 150,
+        "dhis2_admitted": 48,
+        "dhis2_name": "kn Minjibir General Hospital",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Rurum Tsohon Gari PHC",
+        "lga": "Rano",
+        "imam_admissions": 124,
+        "dhis2_admitted": 44,
+        "dhis2_name": "kn Rurum Sabon Gari Primary  Health Clinic",
+        "match_score": 0.85
+      },
+      {
+        "facility_name": "Zarewa PHC",
+        "lga": "Rogo",
+        "imam_admissions": 224,
+        "dhis2_admitted": 182,
+        "dhis2_name": "kn Zarewa Health Clinic",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Garfa SUM YAMMA",
+        "lga": "Sumaila",
+        "imam_admissions": 114,
+        "dhis2_admitted": 112,
+        "dhis2_name": "kn Sumaila  Yamma Primary Health Centre",
+        "match_score": 0.62
+      },
+      {
+        "facility_name": "Masu PHC",
+        "lga": "Sumaila",
+        "imam_admissions": 114,
+        "dhis2_admitted": 74,
+        "dhis2_name": "kn Massu Primary Health Centre",
+        "match_score": 0.89
+      },
+      {
+        "facility_name": "Magami PHC",
+        "lga": "Sumaila",
+        "imam_admissions": 111,
+        "dhis2_admitted": 105,
+        "dhis2_name": "kn Magami Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "GaniPHC",
+        "lga": "Sumaila",
+        "imam_admissions": 113,
+        "dhis2_admitted": 116,
+        "dhis2_name": "kn Gani Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Karfi PHC",
+        "lga": "Takai",
+        "imam_admissions": 197,
+        "dhis2_admitted": 186,
+        "dhis2_name": "kn Karfi Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Fajewa PHC",
+        "lga": "Takai",
+        "imam_admissions": 195,
+        "dhis2_admitted": 98,
+        "dhis2_name": "kn Fajewa Model Primary Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Kachako  PHC",
+        "lga": "Takai",
+        "imam_admissions": 197,
+        "dhis2_admitted": 192,
+        "dhis2_name": "kn Kachako Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Farun Ruwa PHC",
+        "lga": "Takai",
+        "imam_admissions": 201,
+        "dhis2_admitted": 132,
+        "dhis2_name": "kn Faruruwa primary Health Care Centre",
+        "match_score": 0.64
+      },
+      {
+        "facility_name": "Tofa PHC",
+        "lga": "Tofa",
+        "imam_admissions": 219,
+        "dhis2_admitted": 46,
+        "dhis2_name": "kn Tofa Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Daddarawa PHC",
+        "lga": "Tsanyawa",
+        "imam_admissions": 97,
+        "dhis2_admitted": 79,
+        "dhis2_name": "kn Daddarawa Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Gurun MPHC",
+        "lga": "Tsanyawa",
+        "imam_admissions": 115,
+        "dhis2_admitted": 97,
+        "dhis2_name": "kn Gurun primary Health Care Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Dunbulum PHC",
+        "lga": "Tsanyawa",
+        "imam_admissions": 104,
+        "dhis2_admitted": 96,
+        "dhis2_name": "kn Dumbulum Health Centre",
+        "match_score": 0.88
+      },
+      {
+        "facility_name": "Tsanyawa PHC",
+        "lga": "Tsanyawa",
+        "imam_admissions": 109,
+        "dhis2_admitted": 212,
+        "dhis2_name": "kn Tsanyawa Primary Health Clinic",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Gayawa PHC",
+        "lga": "Ungogo",
+        "imam_admissions": 88,
+        "dhis2_admitted": 166,
+        "dhis2_name": "kn Gayawa Basic Health Centre",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Zango PHC",
+        "lga": "Ungogo",
+        "imam_admissions": 89,
+        "dhis2_admitted": 9,
+        "dhis2_name": "kn Zangon Barebari Health Post",
+        "match_score": 0.9
+      },
+      {
+        "facility_name": "Bachirawa MPHC",
+        "lga": "Ungogo",
+        "imam_admissions": 73,
+        "dhis2_admitted": 264,
+        "dhis2_name": "kn Bachirawa Health Post",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Ungogo PHC",
+        "lga": "Ungogo",
+        "imam_admissions": 90,
+        "dhis2_admitted": 263,
+        "dhis2_name": "kn Ungogo Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Lajawa PHC",
+        "lga": "Wudil",
+        "imam_admissions": 116,
+        "dhis2_admitted": 129,
+        "dhis2_name": "kn Lajawa Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Indabo PHC",
+        "lga": "Wudil",
+        "imam_admissions": 114,
+        "dhis2_admitted": 40,
+        "dhis2_name": "kn Indabo Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Darki MPHC",
+        "lga": "Wudil",
+        "imam_admissions": 117,
+        "dhis2_admitted": 125,
+        "dhis2_name": "kn Darki Primary Health Centre",
+        "match_score": 1.0
+      },
+      {
+        "facility_name": "Utai PHC",
+        "lga": "Wudil",
+        "imam_admissions": 114,
+        "dhis2_admitted": 16,
+        "dhis2_name": "kn Utai Primary Health Centre",
+        "match_score": 1.0
+      }
+    ],
+    "dhis2_only": 165,
+    "dhis2_only_list": [
+      {
+        "facility_name": "kn Dundun Health Post",
+        "lga": "kn Ajingi",
+        "sam_admitted": 3,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Albasu Cottage Hospital",
+        "lga": "kn Albasu",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Bataiya Primary Health Centre",
+        "lga": "kn Albasu",
+        "sam_admitted": 3,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Kiyawa Primary Health Centre",
+        "lga": "kn Bagwai",
+        "sam_admitted": 29,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kwajale Primary Health Centre",
+        "lga": "kn Bagwai",
+        "sam_admitted": 7,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rimin Dako Health Post",
+        "lga": "kn Bagwai",
+        "sam_admitted": 6,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Romo Primary Health Centre",
+        "lga": "kn Bagwai",
+        "sam_admitted": 5,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tsattawa Health Post",
+        "lga": "kn Bagwai",
+        "sam_admitted": 5,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Wuro-Bagga  Primary Health Centre",
+        "lga": "kn Bagwai",
+        "sam_admitted": 5,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Bebeji Alfujir Nursing  And  Maternity",
+        "lga": "kn Bebeji",
+        "sam_admitted": 221,
+        "sam_treated": 20
+      },
+      {
+        "facility_name": "kn Damau Health Post",
+        "lga": "kn Bebeji",
+        "sam_admitted": 7,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gwarmai Primary Health Centre (Bebeji)",
+        "lga": "kn Bebeji",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kofa Primary Health Centre",
+        "lga": "kn Bebeji",
+        "sam_admitted": 107,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rahama  (B) Health Post",
+        "lga": "kn Bebeji",
+        "sam_admitted": 0,
+        "sam_treated": 7
+      },
+      {
+        "facility_name": "kn Rahama Primary Health Centre",
+        "lga": "kn Bebeji",
+        "sam_admitted": 16,
+        "sam_treated": 17
+      },
+      {
+        "facility_name": "kn Dutsen Karya Health Post",
+        "lga": "kn Bichi",
+        "sam_admitted": 58,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Jinjimawa Health Post",
+        "lga": "kn Bichi",
+        "sam_admitted": 16,
+        "sam_treated": 35
+      },
+      {
+        "facility_name": "kn Malikawar Garu   Primary Health Centre",
+        "lga": "kn Bichi",
+        "sam_admitted": 96,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Barkum Health Clinic",
+        "lga": "kn Bunkure",
+        "sam_admitted": 24,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Bono   Primary Health Centre",
+        "lga": "kn Bunkure",
+        "sam_admitted": 3,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Dususu Health Post",
+        "lga": "kn Bunkure",
+        "sam_admitted": 30,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gurjiya Primary Health Care",
+        "lga": "kn Bunkure",
+        "sam_admitted": 9,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Karofi Health Clinic BNK",
+        "lga": "kn Bunkure",
+        "sam_admitted": 45,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kulluwa Health Post",
+        "lga": "kn Bunkure",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tsanbaki Health Post",
+        "lga": "kn Bunkure",
+        "sam_admitted": 22,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Adakawa Primary Health Centre",
+        "lga": "kn Dala",
+        "sam_admitted": 0,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Gwammaja Maternity And Child Health Clinic",
+        "lga": "kn Dala",
+        "sam_admitted": 436,
+        "sam_treated": 118
+      },
+      {
+        "facility_name": "kn Kantudu Health Clinic",
+        "lga": "kn Dala",
+        "sam_admitted": 4,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Goron Maje Primary Health Centre",
+        "lga": "kn Danbatta",
+        "sam_admitted": 53,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gwanda Primary Health Centre (Dambatta)",
+        "lga": "kn Danbatta",
+        "sam_admitted": 61,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kore Primary Health Center",
+        "lga": "kn Danbatta",
+        "sam_admitted": 342,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Sansan Primary Health Centre",
+        "lga": "kn Danbatta",
+        "sam_admitted": 306,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Women Centre Health Post",
+        "lga": "kn Danbatta",
+        "sam_admitted": 223,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Dawakin Kudu General Hospital",
+        "lga": "kn Dawakin Kudu",
+        "sam_admitted": 211,
+        "sam_treated": 130
+      },
+      {
+        "facility_name": "kn Tsakuwa Primary Health Centre",
+        "lga": "kn Dawakin Kudu",
+        "sam_admitted": 36,
+        "sam_treated": 12
+      },
+      {
+        "facility_name": "kn Yargaya Health Post",
+        "lga": "kn Dawakin Kudu",
+        "sam_admitted": 2,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Dawakin Tofa General Hospital",
+        "lga": "kn Dawakin Tofa",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Dawanau Clinic and Maternity",
+        "lga": "kn Dawakin Tofa",
+        "sam_admitted": 13,
+        "sam_treated": 11
+      },
+      {
+        "facility_name": "kn Gwamai Health Post",
+        "lga": "kn Dawakin Tofa",
+        "sam_admitted": 14,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Jalli Health Primary Health Centre",
+        "lga": "kn Dawakin Tofa",
+        "sam_admitted": 6,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kwa Health Clinic",
+        "lga": "kn Dawakin Tofa",
+        "sam_admitted": 84,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Yumfawa Primary Health  Center",
+        "lga": "kn Dawakin Tofa",
+        "sam_admitted": 3,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Bamako Initiative Health Post",
+        "lga": "kn Doguwa",
+        "sam_admitted": 220,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Maraku Primary Health Clinic",
+        "lga": "kn Doguwa",
+        "sam_admitted": 6,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn 3BDE Medical Centre",
+        "lga": "kn Fagge",
+        "sam_admitted": 1189,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn 465 Nigerian Airforce Base Hospital",
+        "lga": "kn Fagge",
+        "sam_admitted": 3,
+        "sam_treated": 3
+      },
+      {
+        "facility_name": "kn Galadima Fagge Primary Health Centre",
+        "lga": "kn Fagge",
+        "sam_admitted": 6,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Jaba Model Primary Health Centre",
+        "lga": "kn Fagge",
+        "sam_admitted": 164,
+        "sam_treated": 3
+      },
+      {
+        "facility_name": "kn Rijiyar Lemo Maternal And Child Health Clinic",
+        "lga": "kn Fagge",
+        "sam_admitted": 133,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rijiyar Lemo Model Primary Health Centre",
+        "lga": "kn Fagge",
+        "sam_admitted": 18273,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Sheik Mohammed Jidda General Hospital",
+        "lga": "kn Fagge",
+        "sam_admitted": 1122,
+        "sam_treated": 10
+      },
+      {
+        "facility_name": "kn Tudun Bojuwa Health Primary Health Care",
+        "lga": "kn Fagge",
+        "sam_admitted": 56,
+        "sam_treated": 43
+      },
+      {
+        "facility_name": "kn Garun Danga Primary Health Centre",
+        "lga": "kn Gabasawa",
+        "sam_admitted": 0,
+        "sam_treated": 3
+      },
+      {
+        "facility_name": "kn Karmami Maternal And Child Health Clinic",
+        "lga": "kn Gabasawa",
+        "sam_admitted": 8,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kumbo Health Post",
+        "lga": "kn Gabasawa",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Zakirai Primary Health Centre",
+        "lga": "kn Gabasawa",
+        "sam_admitted": 2,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Dakasoye Health Post",
+        "lga": "kn Garum Mallam",
+        "sam_admitted": 319,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Dorawar Sallau Health Post",
+        "lga": "kn Garum Mallam",
+        "sam_admitted": 9,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Garun Babba Primary Health Centre",
+        "lga": "kn Garum Mallam",
+        "sam_admitted": 0,
+        "sam_treated": 8
+      },
+      {
+        "facility_name": "kn Kadawa Gate Primary Health Centre",
+        "lga": "kn Garum Mallam",
+        "sam_admitted": 121,
+        "sam_treated": 46
+      },
+      {
+        "facility_name": "kn Kazurawa Health Post",
+        "lga": "kn Gaya",
+        "sam_admitted": 10,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Nafisatu Mahammud Primary Health Center",
+        "lga": "kn Gaya",
+        "sam_admitted": 60,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Yankau Primary Health Clinic",
+        "lga": "kn Gaya",
+        "sam_admitted": 99,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tsalle Primary Health Care Centre",
+        "lga": "kn Gezawa",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tsamiyar Kara Primary Health Centre",
+        "lga": "kn Gezawa",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kabuga Primary Health Centre",
+        "lga": "kn Gwale",
+        "sam_admitted": 39,
+        "sam_treated": 12
+      },
+      {
+        "facility_name": "kn Marmara General Hospital",
+        "lga": "kn Kano Municipal",
+        "sam_admitted": 97,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Murtala Mohammed General Hospital",
+        "lga": "kn Kano Municipal",
+        "sam_admitted": 50570,
+        "sam_treated": 53
+      },
+      {
+        "facility_name": "kn Sharada Primary Health Centre",
+        "lga": "kn Kano Municipal",
+        "sam_admitted": 221,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tukuntawa Primary Health Centre",
+        "lga": "kn Kano Municipal",
+        "sam_admitted": 5,
+        "sam_treated": 5
+      },
+      {
+        "facility_name": "kn Unguwar Gini Primary Health Centre",
+        "lga": "kn Kano Municipal",
+        "sam_admitted": 125,
+        "sam_treated": 65
+      },
+      {
+        "facility_name": "kn Karaye Primary Health Centre",
+        "lga": "kn Karaye",
+        "sam_admitted": 8,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gunda Health Post",
+        "lga": "kn Kibiya",
+        "sam_admitted": 68,
+        "sam_treated": 97
+      },
+      {
+        "facility_name": "kn Dashi Health Post",
+        "lga": "kn Kiru",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kafin Maiyaki Primary Health Centre",
+        "lga": "kn Kiru",
+        "sam_admitted": 146,
+        "sam_treated": 4
+      },
+      {
+        "facility_name": "kn Kyarana Health Post",
+        "lga": "kn Kiru",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Ahmed Ado Bayero Primary Health Centre",
+        "lga": "kn Kumbotso",
+        "sam_admitted": 10,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Chiranchi Primary Health Centre",
+        "lga": "kn Kumbotso",
+        "sam_admitted": 3,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Kumbotso Primary Health Centre",
+        "lga": "kn Kumbotso",
+        "sam_admitted": 2240,
+        "sam_treated": 215
+      },
+      {
+        "facility_name": "kn Mariri Primary Health Centre",
+        "lga": "kn Kumbotso",
+        "sam_admitted": 97,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gwarmai Primary Health Centre (Knc)",
+        "lga": "kn Kunchi",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Matan Fada Health Post",
+        "lga": "kn Kunchi",
+        "sam_admitted": 24,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Yan Dadi Primary Health Centre",
+        "lga": "kn Kunchi",
+        "sam_admitted": 0,
+        "sam_treated": 9
+      },
+      {
+        "facility_name": "kn Kura General Hospital",
+        "lga": "kn Kura",
+        "sam_admitted": 113,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Sani Marshal Memorial  Maternity primary health center",
+        "lga": "kn Kura",
+        "sam_admitted": 192,
+        "sam_treated": 119
+      },
+      {
+        "facility_name": "kn Galinja Health Clinic",
+        "lga": "kn Madobi",
+        "sam_admitted": 14,
+        "sam_treated": 3
+      },
+      {
+        "facility_name": "kn Danbawa Health Post",
+        "lga": "kn Minjibir",
+        "sam_admitted": 93,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gasgainu Health Clinic",
+        "lga": "kn Minjibir",
+        "sam_admitted": 37,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kunya Primary Health Centre",
+        "lga": "kn Minjibir",
+        "sam_admitted": 197,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Minjibir Health Clinic",
+        "lga": "kn Minjibir",
+        "sam_admitted": 171,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Sanbauna Primary Health Centre",
+        "lga": "kn Minjibir",
+        "sam_admitted": 81,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tunkunawa Health Post",
+        "lga": "kn Minjibir",
+        "sam_admitted": 4,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gwagwarwa Primary Health Centre",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 218,
+        "sam_treated": 23
+      },
+      {
+        "facility_name": "kn Hotoro Arewa Primary Health Centre",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 104,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kaura Goje  Primary Health Centre",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 102,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kawaji Health Clinic",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 50,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Mohammed Abdullahi Wase General Hospital",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 44,
+        "sam_treated": 31
+      },
+      {
+        "facility_name": "kn Sir Mohammed Sanusi General Hospital",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 4,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tudun Murtala Health Centtre",
+        "lga": "kn Nasarawa",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rano General Hospital",
+        "lga": "kn Rano",
+        "sam_admitted": 433,
+        "sam_treated": 163
+      },
+      {
+        "facility_name": "kn Ruwan Kanya Health Post",
+        "lga": "kn Rano",
+        "sam_admitted": 10,
+        "sam_treated": 21
+      },
+      {
+        "facility_name": "kn Tabobi Health Post",
+        "lga": "kn Rano",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Yalwa Health Post (Ran)",
+        "lga": "kn Rano",
+        "sam_admitted": 0,
+        "sam_treated": 5
+      },
+      {
+        "facility_name": "kn Jili Health Post",
+        "lga": "kn Rimin Gado",
+        "sam_admitted": 9,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rimin Gado Primary Health Centre",
+        "lga": "kn Rimin Gado",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Fulatan Health Clinic",
+        "lga": "kn Rogo",
+        "sam_admitted": 20,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Jajaye Health Clinic",
+        "lga": "kn Rogo",
+        "sam_admitted": 4,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kaleku Health Clinic",
+        "lga": "kn Rogo",
+        "sam_admitted": 22,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kauyen Liman Health Post",
+        "lga": "kn Rogo",
+        "sam_admitted": 14,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rogo General Hospital",
+        "lga": "kn Rogo",
+        "sam_admitted": 60,
+        "sam_treated": 21
+      },
+      {
+        "facility_name": "kn Ruwan Bago Health Post",
+        "lga": "kn Rogo",
+        "sam_admitted": 19,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kokiya Health Post",
+        "lga": "kn Shanono",
+        "sam_admitted": 0,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Shakogi Health Post",
+        "lga": "kn Shanono",
+        "sam_admitted": 1,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Shanono Primary Health Centre",
+        "lga": "kn Shanono",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tsaure Primary Health Centre",
+        "lga": "kn Shanono",
+        "sam_admitted": 6,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Rumo Health Clinic",
+        "lga": "kn Sumaila",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Bagwaro Primary Health Centre",
+        "lga": "kn Takai",
+        "sam_admitted": 13,
+        "sam_treated": 5
+      },
+      {
+        "facility_name": "kn Dambazau  Primary Health Centre (TAK)",
+        "lga": "kn Takai",
+        "sam_admitted": 80,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Durbinde Primary Health Centre",
+        "lga": "kn Takai",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Hantsai Health Post",
+        "lga": "kn Takai",
+        "sam_admitted": 16,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Takai Nysc Primary Health Centre",
+        "lga": "kn Takai",
+        "sam_admitted": 42,
+        "sam_treated": 7
+      },
+      {
+        "facility_name": "kn Dan Tsinke Primary Health Centre",
+        "lga": "kn Tarauni",
+        "sam_admitted": 25,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Rinji  Primary Health Clinic",
+        "lga": "kn Tarauni",
+        "sam_admitted": 3,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Sheikh Isyaka Rabiu Paediatric Hospital",
+        "lga": "kn Tarauni",
+        "sam_admitted": 33572,
+        "sam_treated": 8004
+      },
+      {
+        "facility_name": "kn Unguwa Uku Primary Health Centre",
+        "lga": "kn Tarauni",
+        "sam_admitted": 10345,
+        "sam_treated": 1784
+      },
+      {
+        "facility_name": "kn Langel Health Post",
+        "lga": "kn Tofa",
+        "sam_admitted": 9,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Yargwanda Primary Health Centre",
+        "lga": "kn Tsanyawa",
+        "sam_admitted": 85,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tudun Wada General Hospital",
+        "lga": "kn Tudun Wada",
+        "sam_admitted": 120,
+        "sam_treated": 40
+      },
+      {
+        "facility_name": "kn Tudun Wada MCH HEALTH CLINIC",
+        "lga": "kn Tudun Wada",
+        "sam_admitted": 141,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Abdullahi Umar Ganduje Health Clinic",
+        "lga": "kn Ungogo",
+        "sam_admitted": 120,
+        "sam_treated": 82
+      },
+      {
+        "facility_name": "kn Alharini Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 4,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Bagujan Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 5,
+        "sam_treated": 4
+      },
+      {
+        "facility_name": "kn Dakunkuru Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 27,
+        "sam_treated": 7
+      },
+      {
+        "facility_name": "kn Dalal Health Clinc (UNGO)",
+        "lga": "kn Ungogo",
+        "sam_admitted": 74,
+        "sam_treated": 39
+      },
+      {
+        "facility_name": "kn Dan Rimi Health Clinic",
+        "lga": "kn Ungogo",
+        "sam_admitted": 38,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Dantamashe Primary Health Centre",
+        "lga": "kn Ungogo",
+        "sam_admitted": 187,
+        "sam_treated": 6
+      },
+      {
+        "facility_name": "kn Dausayi Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 9,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Gadan Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 29,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Gera Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Inusawa Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 10,
+        "sam_treated": 5
+      },
+      {
+        "facility_name": "kn Jajira Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 6,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Kadawa Health Clinic",
+        "lga": "kn Ungogo",
+        "sam_admitted": 3,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Panisau Health Clinic",
+        "lga": "kn Ungogo",
+        "sam_admitted": 34,
+        "sam_treated": 15
+      },
+      {
+        "facility_name": "kn Rijiyar Zaki Primary Health Centre",
+        "lga": "kn Ungogo",
+        "sam_admitted": 143,
+        "sam_treated": 19
+      },
+      {
+        "facility_name": "kn Rimin Kebe Health Clinic",
+        "lga": "kn Ungogo",
+        "sam_admitted": 80,
+        "sam_treated": 28
+      },
+      {
+        "facility_name": "kn Rimin Zakara Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 16,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Sabon Garin Rangaza Health Clinic",
+        "lga": "kn Ungogo",
+        "sam_admitted": 4,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tarda Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 2,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Tsamiya Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 5,
+        "sam_treated": 4
+      },
+      {
+        "facility_name": "kn Tudun Fulani Primary Health Center",
+        "lga": "kn Ungogo",
+        "sam_admitted": 1216,
+        "sam_treated": 1074
+      },
+      {
+        "facility_name": "kn Waziri Shehu Gidado General Hospital",
+        "lga": "kn Ungogo",
+        "sam_admitted": 201,
+        "sam_treated": 130
+      },
+      {
+        "facility_name": "kn Yadakunya Leprosy General Hospital",
+        "lga": "kn Ungogo",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Yola Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 13,
+        "sam_treated": 8
+      },
+      {
+        "facility_name": "kn Zaura Babba Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 5,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Zaura Danbaba Health Post",
+        "lga": "kn Ungogo",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Police Academy Primary Health Clinic",
+        "lga": "kn Warawa",
+        "sam_admitted": 19,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Tamburawar Gabas Primary Health Center",
+        "lga": "kn Warawa",
+        "sam_admitted": 1,
+        "sam_treated": 1
+      },
+      {
+        "facility_name": "kn Wambanto Health Post",
+        "lga": "kn Warawa",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Warawa Primary Health Centre",
+        "lga": "kn Warawa",
+        "sam_admitted": 2,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Dagumawa Health Post",
+        "lga": "kn Wudil",
+        "sam_admitted": 17,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Jigaware Health Post",
+        "lga": "kn Wudil",
+        "sam_admitted": 0,
+        "sam_treated": 2
+      },
+      {
+        "facility_name": "kn Katai/Faudan Health Post",
+        "lga": "kn Wudil",
+        "sam_admitted": 30,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Makanwachi Health Post",
+        "lga": "kn Wudil",
+        "sam_admitted": 70,
+        "sam_treated": 0
+      },
+      {
+        "facility_name": "kn Wudil General Hospital",
+        "lga": "kn Wudil",
+        "sam_admitted": 65,
+        "sam_treated": 34
+      },
+      {
+        "facility_name": "kn Wudil Health Post",
+        "lga": "kn Wudil",
+        "sam_admitted": 1,
+        "sam_treated": 0
+      }
+    ],
+    "dhis2_only_admissions": 126902,
+    "lga_breakdown": {
+      "AJINGI": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 1
+      },
+      "BICHI": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 3
+      },
+      "DAMBATTA": {
+        "imam_only": 5,
+        "both": 0,
+        "dhis2_only": 0
+      },
+      "DAWAKIN KUDU": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 3
+      },
+      "DAWAKIN TOFA": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 6
+      },
+      "DOGUWA": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 2
+      },
+      "GARUN MALAM": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 0
+      },
+      "GAYA": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 3
+      },
+      "GWALE": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 1
+      },
+      "KANO MUNICIPAL": {
+        "imam_only": 2,
+        "both": 3,
+        "dhis2_only": 5
+      },
+      "KIBIYA": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 1
+      },
+      "KIRU": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 3
+      },
+      "NASSARAWA": {
+        "imam_only": 5,
+        "both": 0,
+        "dhis2_only": 0
+      },
+      "RIMIN GADO": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 2
+      },
+      "SHANONO": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 4
+      },
+      "SUMAILA": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 1
+      },
+      "TAKAI": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 5
+      },
+      "TARAUNI": {
+        "imam_only": 2,
+        "both": 0,
+        "dhis2_only": 4
+      },
+      "TSANYAWA": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 1
+      },
+      "TUDUN WADA": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 2
+      },
+      "UNGOGO": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 26
+      },
+      "WARAWA": {
+        "imam_only": 1,
+        "both": 0,
+        "dhis2_only": 4
+      },
+      "WUDIL": {
+        "imam_only": 1,
+        "both": 4,
+        "dhis2_only": 6
+      },
+      "ALBASU": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 2
+      },
+      "BAGWAI": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 6
+      },
+      "BEBEJI": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 6
+      },
+      "BUNKURE": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 7
+      },
+      "DALA": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 3
+      },
+      "FAGGE": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 8
+      },
+      "GABASAWA": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 4
+      },
+      "GARKO": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 0
+      },
+      "GEZAWA": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 2
+      },
+      "GWARZO": {
+        "imam_only": 0,
+        "both": 5,
+        "dhis2_only": 0
+      },
+      "KABO": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 0
+      },
+      "KARAYE": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 1
+      },
+      "KUMBOTSO": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 4
+      },
+      "KUNCHI": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 3
+      },
+      "KURA": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 2
+      },
+      "MADOBI": {
+        "imam_only": 0,
+        "both": 5,
+        "dhis2_only": 1
+      },
+      "MAKODA": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 0
+      },
+      "MINJIBIR": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 6
+      },
+      "RANO": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 4
+      },
+      "ROGO": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 6
+      },
+      "TOFA": {
+        "imam_only": 0,
+        "both": 1,
+        "dhis2_only": 1
+      },
+      "DANBATTA": {
+        "imam_only": 0,
+        "both": 0,
+        "dhis2_only": 5
+      },
+      "GARUM MALLAM": {
+        "imam_only": 0,
+        "both": 0,
+        "dhis2_only": 4
+      },
+      "NASARAWA": {
+        "imam_only": 0,
+        "both": 0,
+        "dhis2_only": 7
+      }
+    }
+  }
+}

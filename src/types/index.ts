@@ -109,6 +109,7 @@ export interface MonthlyTrend {
   sam_death: number
   rutf_utilized: number
   rutf_received: number
+  lmd_rutf: number
 }
 
 export type StateFilter = 'Combined' | 'Kaduna' | 'Kano'

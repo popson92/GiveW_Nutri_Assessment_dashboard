@@ -8,6 +8,7 @@ interface DashboardData {
   stateSummary: StateSummary[]
   monthlyTrends: MonthlyTrend[]
   geojson: GeoJSON.FeatureCollection | null
+  facilityProfile: any
   loading: boolean
   error: string | null
 }
@@ -26,6 +27,7 @@ export function useDataLoader(): DashboardData {
     stateSummary: [],
     monthlyTrends: [],
     geojson: null,
+    facilityProfile: null,
     loading: true,
     error: null,
   })
@@ -38,8 +40,9 @@ export function useDataLoader(): DashboardData {
       fetchJson<StateSummary[]>('/data/state_summary.json'),
       fetchJson<MonthlyTrend[]>('/data/monthly_trends.json'),
       fetchJson<GeoJSON.FeatureCollection>('/geo/kano_kaduna_lga.geojson'),
+      fetchJson<any>('/data/facility_profile.json'),
     ])
-      .then(([facilities, dhis2Only, lgaSummary, stateSummary, monthlyTrends, geojson]) => {
+      .then(([facilities, dhis2Only, lgaSummary, stateSummary, monthlyTrends, geojson, facilityProfile]) => {
         setData({
           facilities,
           dhis2Only,
@@ -47,6 +50,7 @@ export function useDataLoader(): DashboardData {
           stateSummary,
           monthlyTrends,
           geojson,
+          facilityProfile,
           loading: false,
           error: null,
         })

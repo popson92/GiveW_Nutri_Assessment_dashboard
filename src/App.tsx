@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import {
-  LayoutDashboard, Map, GitCompare, HeartPulse, Package, Building2,
+  Map, GitCompare, HeartPulse, Package, Building2,
   Target, Tag, Search, ChevronLeft, ChevronRight, Menu, X, Activity,
 } from 'lucide-react'
 import { useDataLoader, FilterContext } from './hooks/useData'
 import type { StateFilter } from './types'
-import Overview from './pages/Overview'
 import Geographic from './pages/Geographic'
 import Reconciliation from './pages/Reconciliation'
 import Outcomes from './pages/Outcomes'
@@ -17,12 +16,11 @@ import OpportunityClass from './pages/OpportunityClass'
 import FacilityExplorer from './pages/FacilityExplorer'
 
 const NAV_ITEMS = [
-  { path: '/', label: 'Executive Overview', icon: LayoutDashboard },
+  { path: '/', label: 'Health Facility Profile', icon: Building2 },
   { path: '/geographic', label: 'Geographic Intelligence', icon: Map },
   { path: '/reconciliation', label: 'Admissions Reconciliation', icon: GitCompare },
   { path: '/outcomes', label: 'Treatment Outcomes', icon: HeartPulse },
   { path: '/rutf', label: 'RUTF Supply Analysis', icon: Package },
-  { path: '/footprint', label: 'Treatment Footprint', icon: Building2 },
   { path: '/sampling', label: 'Sampling Intelligence', icon: Target },
   { path: '/classification', label: 'Opportunity Classification', icon: Tag },
   { path: '/facilities', label: 'Facility Explorer', icon: Search },
@@ -226,12 +224,11 @@ export default function App() {
 
           <div className="p-4 lg:p-6 max-w-[1600px] mx-auto">
             <Routes>
-              <Route path="/" element={<Overview data={data} />} />
+              <Route path="/" element={<Footprint data={data} />} />
               <Route path="/geographic" element={<Geographic data={data} />} />
               <Route path="/reconciliation" element={<Reconciliation data={data} />} />
               <Route path="/outcomes" element={<Outcomes data={data} />} />
               <Route path="/rutf" element={<RutfAnalysis data={data} />} />
-              <Route path="/footprint" element={<Footprint data={data} />} />
               <Route path="/sampling" element={<Sampling data={data} />} />
               <Route path="/classification" element={<OpportunityClass data={data} />} />
               <Route path="/facilities" element={<FacilityExplorer data={data} />} />

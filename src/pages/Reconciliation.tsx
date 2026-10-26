@@ -85,34 +85,71 @@ export default function Reconciliation({ data }: Props) {
 
   const lgaReconChart = useMemo(() => {
     const sorted = [...lgas]
-      .filter(l => l.imam_dhis2_diff != null)
-      .sort((a, b) => (b.imam_dhis2_diff || 0) - (a.imam_dhis2_diff || 0))
-      .slice(0, 15)
+      .filter(l => l.imam_admissions > 0)
+      .sort((a, b) => b.imam_admissions - a.imam_admissions)
+    const names = sorted.map(l => l.lga_normalized).reverse()
+
+    const needData = sorted.map(l => l.rutf_implied).reverse()
+    const imamData = sorted.map(l => l.rutf_utilized).reverse()
+    const lmdData = sorted.map(l => l.lmd_rutf).reverse()
+
     return {
-      tooltip: { trigger: 'axis' as const },
-      grid: { left: 130, right: 30, top: 10, bottom: 30 },
-      xAxis: { type: 'value' as const, axisLabel: { fontSize: 10 } },
+      tooltip: {
+        trigger: 'axis' as const,
+        formatter: (params: any) => {
+          if (!params || params.length === 0) return ''
+          const idx = params[0].dataIndex
+          const lga = names[idx]
+          let html = `<strong>${lga}</strong>`
+          for (const p of params) {
+            if (p.value != null && p.value > 0) {
+              html += `<br/>${p.marker} ${p.seriesName}: ${fmtNum(p.value)}`
+            }
+          }
+          return html
+        },
+      },
+      legend: {
+        top: 0,
+        textStyle: { fontSize: 11 },
+        data: ['Need (admissions × 150)', 'IMAM utilised', 'LMD distributed'],
+      },
+      grid: { left: 130, right: 40, top: 35, bottom: 10 },
+      xAxis: {
+        type: 'value' as const,
+        axisLabel: { fontSize: 10, formatter: (v: number) => v >= 1000 ? `${(v / 1000).toFixed(0)}K` : `${v}` },
+      },
       yAxis: {
         type: 'category' as const,
-        data: sorted.map(l => l.lga_normalized).reverse(),
+        data: names,
         axisLabel: { fontSize: 10 },
+        axisTick: { show: false },
+        axisLine: { show: false },
       },
       series: [
         {
-          name: 'IMAM Admissions',
-          type: 'bar' as const,
-          stack: 'total',
-          data: sorted.map(l => l.imam_admissions).reverse(),
+          name: 'Need (admissions × 150)',
+          type: 'scatter' as const,
+          data: needData,
+          symbolSize: 10,
           itemStyle: { color: COLORS.primary },
-          barMaxWidth: 16,
+          z: 10,
         },
         {
-          name: 'DHIS2 Matched',
-          type: 'bar' as const,
-          stack: 'dhis2',
-          data: sorted.map(l => l.dhis2_sam_admitted).reverse(),
-          itemStyle: { color: COLORS.blue },
-          barMaxWidth: 16,
+          name: 'IMAM utilised',
+          type: 'scatter' as const,
+          data: imamData,
+          symbolSize: 10,
+          itemStyle: { color: COLORS.accent },
+          z: 10,
+        },
+        {
+          name: 'LMD distributed',
+          type: 'scatter' as const,
+          data: lmdData.map(v => v > 0 ? v : null),
+          symbolSize: 10,
+          itemStyle: { color: '#22c55e' },
+          z: 10,
         },
       ],
     }
@@ -174,8 +211,8 @@ export default function Reconciliation({ data }: Props) {
       </div>
 
       <div className="mt-4">
-        <ChartCard title="LGA-Level Reconciliation" subtitle="IMAM vs DHIS2 admissions by LGA (top 15)" source="Aggregated from facility data">
-          <EChart option={lgaReconChart} height={400} />
+        <ChartCard title="LGA-Level RUTF Insights" subtitle="Need (admissions × 150), IMAM utilised, and LMD distributed — by LGA" source="IMAM Frame v5, LMD records">
+          <EChart option={lgaReconChart} height={Math.max(450, lgas.filter(l => l.imam_admissions > 0).length * 28)} />
         </ChartCard>
       </div>
 

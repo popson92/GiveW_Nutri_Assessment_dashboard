@@ -774,7 +774,7 @@ print(f"  Certainty stratum (Kaduna): {certainty_count} facilities")
 print("Building monthly trends...")
 monthly_trends = defaultdict(lambda: {
     "sam_admissions": 0, "sam_cured": 0, "sam_defaulters": 0, "sam_death": 0,
-    "rutf_utilized": 0, "rutf_received": 0
+    "rutf_utilized": 0, "rutf_received": 0, "lmd_rutf": 0
 })
 
 for r in imam_rows:
@@ -791,6 +791,25 @@ for r in imam_rows:
     monthly_trends[key]["sam_death"] += safe_int(r.get("sam_death")) or 0
     monthly_trends[key]["rutf_utilized"] += safe_int(r.get("rutf_utilized_sachets")) or 0
     monthly_trends[key]["rutf_received"] += safe_int(r.get("rutf_received_sachets")) or 0
+
+# Add monthly LMD data
+try:
+    import pandas as pd
+    lmd_monthly = pd.read_excel(DATA_DIR / "LMD_RUTF_2025_Assembled.xlsx")
+    for _, row in lmd_monthly.iterrows():
+        yr = int(row["year"])
+        mn = int(row["month"])
+        period = f"{yr}-{mn:02d}"
+        sachets = int(row.get("lmd_rutf_sachets", 0) or 0)
+        key = ("Kaduna", period)
+        monthly_trends[key]["lmd_rutf"] += sachets
+    lmd_months_with_data = set()
+    for (state, period), vals in monthly_trends.items():
+        if state == "Kaduna" and vals["lmd_rutf"] > 0:
+            lmd_months_with_data.add(period)
+    print(f"  LMD monthly data added: {len(lmd_months_with_data)} months with data")
+except Exception as e:
+    print(f"  LMD monthly integration error: {e}")
 
 trends_list = []
 for (state, period), vals in sorted(monthly_trends.items()):
@@ -844,7 +863,277 @@ except Exception as e:
 
 
 # ============================================================
-# 13. Write output files
+# 13. Integrate Kano primary data + MSF data
+# ============================================================
+print("Integrating Kano primary data + MSF data...")
+try:
+    import pandas as pd
+
+    # Kano State Nutrition Primary Data
+    kano_primary = pd.read_excel(
+        DATA_DIR / "Kano_State_data" / "Kano State Nutrition Primary Data.xlsx",
+        sheet_name="Data Input Sheet", skiprows=2
+    )
+    kano_primary_facs = kano_primary.groupby(["LGA", "Health Facility Name"]).agg(
+        new_admission=("New Admission", "sum"),
+        cured=("Cured", "sum"),
+        defaulters=("Defaulters", "sum"),
+        death=("Death", "sum"),
+        non_recovered=("Non-Recovered ", "sum"),
+        transfer_in=("Transfer IN", "sum"),
+        transfer_out=("Transfer OUT", "sum"),
+        implementing_partner=("Implementing partner", "first"),
+        imam_type=("IMAM Type", "first"),
+        months=("Month", "nunique"),
+    ).reset_index()
+    kano_primary_active = kano_primary_facs[kano_primary_facs.new_admission > 0]
+    print(f"  Kano primary: {len(kano_primary_active)} facilities with admissions, {int(kano_primary_active.new_admission.sum())} total")
+
+    # MSF data
+    msf_df = pd.read_excel(DATA_DIR / "Kano_State_data" / "Msf data.ods", engine="odf", sheet_name="Sheet2", skiprows=1)
+    msf_df = msf_df[msf_df["State"].notna() & (msf_df["State"] != "")]
+    msf_facs = msf_df.groupby(["LGA", "Health Facility Name"]).agg(
+        new_admission=("New Admission", "sum"),
+        cured=("Cured", "sum"),
+        defaulters=("Defaulters", "sum"),
+        death=("Death", "sum"),
+    ).reset_index()
+    print(f"  MSF: {len(msf_facs)} facilities, {int(msf_facs.new_admission.sum())} admissions")
+
+    # Update Kano IMAM facilities with primary data where available
+    kano_updated = 0
+    for _, prow in kano_primary_active.iterrows():
+        fac_name = str(prow["Health Facility Name"]).strip()
+        lga_name = str(prow["LGA"]).strip()
+        for f in facilities:
+            if f["state"] != "Kano":
+                continue
+            if (f["facility_name"].upper() == fac_name.upper() or
+                fac_name.upper() in f["facility_name"].upper() or
+                f["facility_name"].upper() in fac_name.upper()):
+                if f.get("kano_primary_admissions") is None:
+                    f["kano_primary_admissions"] = int(prow["new_admission"])
+                    f["kano_primary_cured"] = int(prow["cured"])
+                    f["kano_primary_partner"] = str(prow["implementing_partner"])
+                    kano_updated += 1
+                break
+    print(f"  Kano IMAM facilities updated with primary data: {kano_updated}")
+
+    # Add MSF admissions as supplementary field
+    msf_updated = 0
+    for _, mrow in msf_facs.iterrows():
+        fac_name = str(mrow["Health Facility Name"]).strip()
+        for f in facilities:
+            if f["state"] != "Kano":
+                continue
+            if fac_name.upper() in f["facility_name"].upper() or f["facility_name"].upper() in fac_name.upper():
+                f["msf_admissions"] = int(mrow["new_admission"])
+                f["msf_cured"] = int(mrow["cured"])
+                msf_updated += 1
+                break
+        else:
+            # MSF facility not found in IMAM frame, note it
+            print(f"  MSF facility not in IMAM: {fac_name} ({mrow['LGA']})")
+    print(f"  MSF-linked IMAM facilities: {msf_updated}")
+
+except Exception as e:
+    print(f"  Kano integration error: {e}")
+    import traceback; traceback.print_exc()
+
+# ============================================================
+# 13b. Build facility profile (Venn diagram data)
+# ============================================================
+print("Building facility profile for Venn diagram...")
+
+# --- Kano: use 97 CMAM facilities list as the IMAM source ---
+try:
+    kano_cmam = pd.read_excel(
+        DATA_DIR / "Kano_State_data" / "Kano State Nutrition Primary Data.xlsx",
+        sheet_name="Kano CMAM Facilities List"
+    )
+    kano_cmam["LGA"] = kano_cmam["LGA"].ffill()
+    kano_cmam = kano_cmam[kano_cmam["Health Facility Name"].notna()]
+    print(f"  Kano CMAM list: {len(kano_cmam)} facilities across {kano_cmam['LGA'].nunique()} LGAs")
+
+    # Get Kano DHIS2 facilities (those with at least 1 admission or treatment)
+    kano_dhis2_all = [d for d in dhis2_facilities if d.get("state") == "Kano" and (d.get("sam_admitted", 0) or 0) + (d.get("sam_treated", 0) or 0) > 0]
+    kano_dhis2_names = {d["facility"].upper().strip() for d in kano_dhis2_all}
+    print(f"  Kano DHIS2 with admissions/treatment: {len(kano_dhis2_all)} facilities")
+
+    # Match CMAM list against DHIS2
+    import re
+    from difflib import SequenceMatcher
+
+    def normalize_fac_name(name):
+        """Strip prefixes/suffixes to get core place name for matching."""
+        n = name.upper().strip()
+        # Remove 'kn ' / 'kd ' prefix from DHIS2 names
+        n = re.sub(r'^(KN|KD)\s+', '', n)
+        # Remove common suffixes
+        for sfx in ['PRIMARY HEALTH CENTRE', 'PRIMARY HEALTH CENTER', 'PRIMARY HEALTH CARE',
+                     'PRIMARY HEALTH CLINIC', 'PRIMARY  HEALTH CLINIC',
+                     'BASIC HEALTH CLINIC', 'HEALTH CENTRE', 'HEALTH CENTER', 'HEALTH CLINIC',
+                     'HEALTH POST', 'COMPREHENSIVE HEALTH CENTRE',
+                     'MODEL PRIMARY HEALTH CENTRE', 'MATERNAL AND CHILD HEALTH CLINIC',
+                     'GENERAL HOSPITAL', 'MPHC', 'PHC', 'CHC', 'MCH', 'HP']:
+            n = re.sub(r'\s*\b' + re.escape(sfx) + r'\b\s*', ' ', n)
+        return n.strip()
+
+    kano_both_list = []
+    kano_imam_only_list = []
+    kano_matched_dhis2 = set()
+
+    for _, row in kano_cmam.iterrows():
+        fac_name = str(row["Health Facility Name"]).strip()
+        lga = str(row["LGA"]).strip()
+        fac_core = normalize_fac_name(fac_name)
+
+        # Try matching with primary data to get admissions
+        primary_adm = 0
+        if 'kano_primary_active' in dir():
+            for _, prow in kano_primary_active.iterrows():
+                pname = str(prow["Health Facility Name"]).strip().upper()
+                fac_upper = fac_name.upper()
+                if pname == fac_upper or pname in fac_upper or fac_upper in pname:
+                    primary_adm = int(prow["new_admission"])
+                    break
+
+        matched = False
+        best_match = None
+        best_score = 0
+
+        for d in kano_dhis2_all:
+            d_name_raw = d["facility"]
+            d_lga = (d.get("lga", "") or "").upper().strip()
+
+            # Must be same LGA
+            if not (lga.upper() in d_lga or d_lga in lga.upper()):
+                continue
+
+            d_core = normalize_fac_name(d_name_raw)
+
+            # Exact core match
+            if fac_core == d_core:
+                best_match = d
+                best_score = 1.0
+                break
+
+            # Substring match on core names
+            if len(fac_core) >= 3 and len(d_core) >= 3:
+                if fac_core in d_core or d_core in fac_core:
+                    score = 0.9
+                    if score > best_score:
+                        best_match = d
+                        best_score = score
+                    continue
+
+            # Fuzzy match on core names
+            ratio = SequenceMatcher(None, fac_core, d_core).ratio()
+            if ratio > best_score and ratio >= 0.6:
+                best_match = d
+                best_score = ratio
+
+        if best_match and best_score >= 0.6:
+            matched = True
+            kano_matched_dhis2.add(best_match["facility"])
+            kano_both_list.append({
+                "facility_name": fac_name, "lga": lga,
+                "imam_admissions": primary_adm,
+                "dhis2_admitted": best_match.get("sam_admitted", 0) or 0,
+                "dhis2_name": best_match["facility"],
+                "match_score": round(best_score, 2),
+            })
+
+        if not matched:
+            kano_imam_only_list.append({
+                "facility_name": fac_name, "lga": lga,
+                "imam_admissions": primary_adm,
+            })
+
+    # DHIS2-only = Kano DHIS2 facilities not matched to any CMAM facility
+    kano_dhis2_only_list = [d for d in kano_dhis2_all if d["facility"] not in kano_matched_dhis2]
+
+    print(f"  Kano profile: IMAM-only={len(kano_imam_only_list)}, Both={len(kano_both_list)}, DHIS2-only={len(kano_dhis2_only_list)}")
+
+except Exception as e:
+    print(f"  Kano CMAM matching error: {e}")
+    import traceback; traceback.print_exc()
+    # Fallback to original method
+    kano_imam_only_list = [{"facility_name": f["facility_name"], "lga": f["lga_normalized"], "imam_admissions": f["imam_admissions"]}
+                           for f in facilities if f["state"] == "Kano" and f["match_status"] != "matched"]
+    kano_both_list = []
+    kano_dhis2_only_list = []
+
+# Kaduna uses original logic
+for state in ["Kaduna"]:
+    state_facs = [f for f in facilities if f["state"] == state]
+    matched = sum(1 for f in state_facs if f["match_status"] == "matched")
+    imam_only = sum(1 for f in state_facs if f["match_status"] != "matched")
+    d2only = [d for d in all_dhis2_only if d["state"] == state]
+    print(f"  {state}: IMAM-only={imam_only}, Both={matched}, DHIS2-only={len(d2only)}")
+
+# Build facility_profile data for JSON output
+facility_profile = {
+    "Kaduna": {
+        "imam_only": [{"facility_name": f["facility_name"], "lga": f["lga_normalized"], "imam_admissions": f["imam_admissions"]}
+                      for f in facilities if f["state"] == "Kaduna" and f["match_status"] != "matched"],
+        "both": sum(1 for f in facilities if f["state"] == "Kaduna" and f["match_status"] == "matched"),
+        "both_list": [{"facility_name": f["facility_name"], "lga": f["lga_normalized"],
+                       "imam_admissions": f["imam_admissions"], "dhis2_admitted": f.get("dhis2_sam_admitted", 0) or 0}
+                      for f in facilities if f["state"] == "Kaduna" and f["match_status"] == "matched"],
+        "dhis2_only": len([d for d in all_dhis2_only if d["state"] == "Kaduna"]),
+        "dhis2_only_list": [{"facility_name": d["facility"], "lga": d.get("lga", ""), "sam_admitted": d.get("sam_admitted", 0) or 0,
+                             "sam_treated": d.get("sam_treated", 0) or 0}
+                            for d in all_dhis2_only if d["state"] == "Kaduna"],
+        "dhis2_only_admissions": sum(d["sam_admitted"] or 0 for d in all_dhis2_only if d["state"] == "Kaduna"),
+    },
+    "Kano": {
+        "imam_only": kano_imam_only_list,
+        "both": len(kano_both_list),
+        "both_list": kano_both_list,
+        "dhis2_only": len(kano_dhis2_only_list),
+        "dhis2_only_list": [{"facility_name": d["facility"], "lga": d.get("lga", ""),
+                             "sam_admitted": d.get("sam_admitted", 0) or 0, "sam_treated": d.get("sam_treated", 0) or 0}
+                            for d in kano_dhis2_only_list],
+        "dhis2_only_admissions": sum((d.get("sam_admitted", 0) or 0) for d in kano_dhis2_only_list),
+    },
+}
+
+# Build LGA-level facility classification for each state
+def normalize_lga(name):
+    """Normalize LGA names to uppercase, stripping 'kn '/'kd ' prefix."""
+    if not name or str(name) == 'nan':
+        return 'Unknown'
+    import re
+    n = str(name).strip().upper()
+    n = re.sub(r'^(KN|KD)\s+', '', n)
+    return n
+
+for state_key in ["Kaduna", "Kano"]:
+    sp = facility_profile[state_key]
+    lga_counts = {}
+    for f in sp["imam_only"]:
+        lga = normalize_lga(f.get("lga", ""))
+        lga_counts.setdefault(lga, {"imam_only": 0, "both": 0, "dhis2_only": 0})
+        lga_counts[lga]["imam_only"] += 1
+    for f in sp["both_list"]:
+        lga = normalize_lga(f.get("lga", ""))
+        lga_counts.setdefault(lga, {"imam_only": 0, "both": 0, "dhis2_only": 0})
+        lga_counts[lga]["both"] += 1
+    for f in sp.get("dhis2_only_list", []):
+        lga = normalize_lga(f.get("lga", ""))
+        lga_counts.setdefault(lga, {"imam_only": 0, "both": 0, "dhis2_only": 0})
+        lga_counts[lga]["dhis2_only"] += 1
+    sp["lga_breakdown"] = lga_counts
+    print(f"  {state_key} LGA breakdown: {len(lga_counts)} LGAs")
+    # Verify totals
+    total_io = sum(v["imam_only"] for v in lga_counts.values())
+    total_b = sum(v["both"] for v in lga_counts.values())
+    total_d = sum(v["dhis2_only"] for v in lga_counts.values())
+    print(f"    IMAM-only={total_io}, Both={total_b}, DHIS2-only={total_d}, Total={total_io + total_b + total_d}")
+
+# ============================================================
+# 14. Write output files
 # ============================================================
 print("\nWriting output files...")
 
@@ -891,6 +1180,10 @@ print(f"  dhis2_facilities.json: {len(dhis2_facilities)} records")
 with open(OUT_DIR / "kaduna_lga_recon.json", "w") as f:
     json.dump(lga_recon_kaduna, f, indent=None, default=str)
 print(f"  kaduna_lga_recon.json: {len(lga_recon_kaduna)} records")
+
+with open(OUT_DIR / "facility_profile.json", "w") as f:
+    json.dump(facility_profile, f, indent=2, default=str)
+print(f"  facility_profile.json written")
 
 
 # ============================================================
